@@ -13,6 +13,28 @@ function nameIntoFile(name) {
     .replaceAll("!", "")}.png`;
 }
 
+function formatDesctription(desc) {
+  if (desc)
+    return desc
+      .replaceAll(".", ".<br/>")
+      .replaceAll(
+        /\s\d+\s[%]|\s\d+\s\w{2,7}\b|\s\d+[%]/gim,
+        '<b class="yellow">$&</b>'
+      )
+      .replaceAll(
+        /(\d+)[/](\d+)[/](\d+)\s(\w{1,9})|(\d+)[/](\d+)[/](\d+)\s([%])/gim,
+        "<b class='yellow'>$1$5</b>/<b class='green'>$2$6</b>/<b class='purple'>$3$7</b> <b>$4$8</b>"
+      )
+      .replaceAll(/exit\sgates/gim, "<b class='orange'>$&</b>")
+      .replaceAll(/skill\schecks?/gim, '<b class="orange">$&</b>')
+      .replaceAll(/killer's|killers?/gim, "<b class='red'>$&</b>")
+      .replaceAll(/auras?/gim, '<b class="orange">$&</b>')
+      .replaceAll(/dying\sstate/gim, '<b class="red">$&</b>')
+      .replaceAll(/bloodpoints?/gim, "<b class='red'>$&</b>")
+      .replaceAll(/survivor's?|survivors?/gim, '<b class="orange">$&</b>');
+  else return "";
+}
+
 const Perk = ({ onClick, perk, selected }) => {
   const [open, setOpen] = useState(false);
 
@@ -32,7 +54,9 @@ const Perk = ({ onClick, perk, selected }) => {
             <span className="perk-title">{perk?.name}</span>
             <span>{`${perk?.rarity} ${perk?.character} Perk`}</span>
           </header>
-          <div>{perk?.desc}</div>
+          <div
+            dangerouslySetInnerHTML={{ __html: formatDesctription(perk?.desc) }}
+          />
         </div>
       }
     >

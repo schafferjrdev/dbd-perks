@@ -34,7 +34,7 @@ function Loadout({ allPerks, title }) {
       setAllSurvivorPerks(allPerks);
     } else {
       const sanitizedText = replaceSpecialChars(text);
-      const filter = new RegExp(sanitizedText, "i");
+      const filter = new RegExp(sanitizedText, "gmiu");
       const array = allPerks.filter((perk) => {
         return (
           replaceSpecialChars(perk.name).match(filter) ||

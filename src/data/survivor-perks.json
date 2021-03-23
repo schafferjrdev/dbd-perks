@@ -107,7 +107,7 @@
     },
     {
         "character": "Ash Williams",
-        "desc": "Unlocks potential in one's Aura-reading ability. The recovery progress of dying Survivors can be determined by the intensity of their Auras IconHelp auras.png at a distance of up to 48 metres. When you heal a Survivor from the Dying State to Injured, both the healed Survivor and yourself see the Killer's Aura for a duration of 4/5/6 seconds.",
+        "desc": "Unlocks potential in one's Aura-reading ability. The recovery progress of dying Survivors can be determined by the intensity of their Auras at a distance of up to 48 metres. When you heal a Survivor from the Dying State to Injured, both the healed Survivor and yourself see the Killer's Aura for a duration of 4/5/6 seconds.",
         "name": "Buckle Up",
         "rarity": "Very Rare",
         "type": "Aura"
@@ -213,7 +213,7 @@
     },
     {
         "character": "Jane Romero",
-        "desc": "When your mind is set, there better be no one standing in your way. While standing in a Locker IconHelp lockers.png for 3 seconds, Head On activates. While Head On is activated, performing a rushed action to leave a Locker stuns the Killer for 3 seconds if they are standing within range. Causes the Exhausted Status Effect for 60/50/40 seconds if the stun was successful.",
+        "desc": "When your mind is set, there better be no one standing in your way. While standing in a Locker for 3 seconds, Head On activates. While Head On is activated, performing a rushed action to leave a Locker stuns the Killer for 3 seconds if they are standing within range. Causes the Exhausted Status Effect for 60/50/40 seconds if the stun was successful.",
         "name": "Head On",
         "rarity": "Very Rare",
         "type": "Evasion"
@@ -421,7 +421,7 @@
         "name": "Spine Chill",
         "rarity": "Very Rare",
         "type": "Objective",
-        "realName": "cat;gat"
+        "realName": "cat;gato;gata;gatinho;gatinha"
     },
     {
         "character": "Meg Thomas",
@@ -517,7 +517,7 @@
     },
     {
         "character": "Kate Denson",
-        "desc": "Unlocks potential in one's Aura-reading ability. Auras of Pallets IconHelp pullDown.png and Vaults are revealed to you when within a range of 20 metres. Windows of Opportunity has a cool-down of 30/25/20 seconds when vaulting or dropping a Pallet during a Chase.",
+        "desc": "Unlocks potential in one's Aura-reading ability. Auras of Pallets and Vaults are revealed to you when within a range of 20 metres. Windows of Opportunity has a cool-down of 30/25/20 seconds when vaulting or dropping a Pallet during a Chase.",
         "name": "Windows Of Opportunity",
         "rarity": "Rare",
         "type": "Aura"
