@@ -1,0 +1,538 @@
+[
+    {
+        "character": "Nurse",
+        "desc": "The Auras of Survivors who are healing or being healed are revealed to you when they are within a range of 20/24/28 metres.",
+        "name": "A Nurse's Calling",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Trapper",
+        "desc": "You get excited in anticipation of hooking your prey. Increases your Movement speed while transporting bodies by 6/12/18%. While transporting a body, your Terror Radius is increased by 12 metres.",
+        "name": "Agitation",
+        "rarity": "Very Rare",
+        "type": "Chase"
+    },
+    {
+        "character": "Clown",
+        "desc": "Your vault speed is 5/10/15% faster. Performing a vault action calls upon The Entity to block that vault location for 8/12/16 seconds. Only one vault location may be blocked in this way at any given time. The vault location is blocked only for Survivors.",
+        "name": "Bamboozle",
+        "rarity": "Rare",
+        "type": "Chase"
+    },
+    {
+        "character": "Cannibal",
+        "desc": "A deep bond with The Entity unlocks potential in one's Aura-reading ability. After hooking a Survivor, all other Survivors' Auras are revealed to you for 4 seconds when they are farther than 40 metres from the Hook. Each time a Survivor is hooked for the first time, gain a 25% stack-able bonus to all Bloodpoint gains up to a maximum of 50/75/100%.",
+        "name": "Barbecue & Chilli",
+        "rarity": "Very Rare",
+        "tier": "S",
+        "type": "Aura;BP",
+        "realName": "Bubba Sawyer;BBQ"
+    },
+    {
+        "character": "Huntress",
+        "desc": "Your lust for a kill is so intense that your connection with The Entity is momentarily lost making you totally unpredictable. The Red Stain disappears after gaining Bloodlust Tier I and stays hidden until you lose Bloodlust. Gain 30/40/50% more Bloodpoints for actions in the Hunter Category.",
+        "name": "Beast Of Prey",
+        "rarity": "Rare",
+        "type": "Chase;BP"
+    },
+    {
+        "character": "All",
+        "desc": "Unlocks potential in one's Aura-reading ability. Each time a Generator is fully repaired, Survivors within 16 metres of the completed Generator will be revealed for 5 seconds. When the last Generator is fully repaired, all the Survivors' Auras are revealed for 5/7/10 seconds.",
+        "name": "Bitter Murmur",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Oni",
+        "desc": "The agony of one is inflicted on others. When hooking a Survivor, all other injured Survivors suffer from the Haemorrhage Status Effect until healed and the Exhausted Status Effect for 45 seconds. Blood Echo can only be triggered once every 80/70/60 seconds.",
+        "name": "Blood Echo",
+        "rarity": "Very Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Nightmare",
+        "desc": "As soon as the Exit Gate is opened, Blood Warden is activated. The Auras of any Survivors located within Exit Gate areas are revealed to you. Once per Trial, hooking a Survivor while Blood Warden is active calls upon The Entity to block both Exits for all Survivors for 30/40/60 seconds.",
+        "name": "Blood Warden",
+        "rarity": "Very Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Wraith",
+        "desc": "Like a hunting scent hound, you smell traces of blood at a great distance. Fresh Blood Stains are considerably more discernible than normal and can be tracked for 2/3/4 seconds longer than normal.",
+        "name": "Bloodhound",
+        "rarity": "Very Rare",
+        "type": "Hunt"
+    },
+    {
+        "character": "Trapper",
+        "desc": "Your great strength allows you to shred through your prey's defences. Destroy dropped Pallets and damage Generators 10/15/20% faster.",
+        "name": "Brutal Strength",
+        "rarity": "Very Rare",
+        "type": "Chase"
+    },
+    {
+        "character": "Plague",
+        "desc": "Your prayers invoke a dark power that meddles with the Survivors' chances of survival. 3 Generators located farthest from you are blocked by The Entity for 80/100/120 seconds at the start of the Trial.",
+        "name": "Corrupt Intervention",
+        "rarity": "Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Clown",
+        "desc": "Your presence alone instils great fear. Survivors within your Terror Radius have a 30/40/50% penalty to the Healing progression speed.",
+        "name": "Coulrophobia",
+        "rarity": "Very Rare",
+        "type": "Terror"
+    },
+    {
+        "character": "Demogorgon",
+        "desc": "Your ties to the otherworldly manifest when your prey attempts to get away. Each time a Generator is repaired, all Windows and vault locations within a radius of 24 metres from the completed Generator are blocked for all Survivors for the next 20/25/30 seconds.",
+        "name": "Cruel Limits",
+        "rarity": "Very Rare",
+        "type": "Chase"
+    },
+    {
+        "character": "Plague",
+        "desc": "The display of your Powers creates a whirlwind of panic that spreads throughout the land. You become obsessed with one Survivor. Hitting the Obsession with your basic attack causes the Obsession to emit a Terror Radius of 32 metres for 20/25/30 seconds. During that time, your Terror Radius is reduced to 0 metres.",
+        "name": "Dark Devotion",
+        "rarity": "Very Rare",
+        "type": "Terror"
+    },
+    {
+        "character": "All",
+        "desc": "Unlocks potential in one's Aura-reading ability. Reveals dying Survivors' Auras when standing within 20/28/36 metres.",
+        "name": "Deerstalker",
+        "rarity": "Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Legion",
+        "desc": "Any time two or more Survivors are working on the same Generator, that Generator's Aura is highlighted in yellow for 8/10/12 seconds.",
+        "name": "Discordance",
+        "rarity": "Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "All",
+        "desc": "Your horrifying emanation strikes at a supernaturally long distance. Your Terror Radius is increased by 22/24/26%. Gain 100% more Bloodpoints for actions in the Deviousness Category.",
+        "name": "Distressing",
+        "rarity": "Very Rare",
+        "type": "Terror;BP"
+    },
+    {
+        "character": "Shape",
+        "desc": "You become obsessed with one Survivor. Your Obsession gains a 33% Action Speed bonus to unhooking and healing other Survivors. Each time you hook a Survivor that is not the Obsession and the Obsession is alive, gain a Token. If the Obsession is alive, all others Survivors get a stack-able 2/2.5/3% penalty to Repair, Healing, and Sabotage speed for each Token.",
+        "name": "Dying Light",
+        "rarity": "Very Rare",
+        "type": "Penalty",
+        "realName": "Michael Myers"
+    },
+    {
+        "character": "Hillbilly",
+        "desc": "You are resilient to pain. You reduce the duration of Pallet Stuns by 40/45/50%.",
+        "name": "Enduring",
+        "rarity": "Rare",
+        "type": "Chase"
+    },
+    {
+        "character": "Nightmare",
+        "desc": "The increased pressure of losing your preys fills you with anger and gives you unsuspected motivation. Each time the Survivors complete repairs on a Generator, Fire Up grows in power. For each Generator completed, gain a stack-able 3/3.5/4% buff to Picking-Up, Dropping, Pallet Breaking, Generator Damaging and Vaulting speeds for the remainder of the Trial.",
+        "name": "Fire Up",
+        "rarity": "Rare",
+        "type": "Chase"
+    },
+    {
+        "character": "Cannibal",
+        "desc": "Your vicious Basic Attacks make the Survivors drop their Item on impact. The lost Item is damaged in the fall, losing 0/5/10% of its base amount of Charges.",
+        "name": "Franklin's Demise",
+        "rarity": "Very Rare",
+        "type": "Penalty",
+        "realName": "Bubba Sawyer"
+    },
+    {
+        "character": "Ghost Face",
+        "desc": "You become obsessed with one Survivor. You lurk in the shadows, eliminating your victims one by one. When your Obsession is hooked, Furtive Chase receives a Token, up to a maximum of 2/3/4 Tokens. Each Token decreases your Terror Radius by 4 metres while in a Chase. When a Survivor rescues the Obsession from a Hook, the rescuer becomes the Obsession. You lose all Tokens if the Obsession is sacrificed or killed.",
+        "name": "Furtive Chase",
+        "rarity": "Very Rare",
+        "type": "Terror"
+    },
+    {
+        "character": "Pig",
+        "desc": "Your ingenious modifications to Hooks prevent tampering and permanent damage. Hooks destroyed by sabotage or sacrifices repair automatically after 30/20/10 seconds. Gain a notification when someone starts sabotaging the Hooks. The automatic repair timer of sabotaged Bear Traps is reduced by 60 seconds.",
+        "name": "Hangman's Trick",
+        "rarity": "Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Hag",
+        "desc": "A Hex rooting its power on hope. The false hope of Survivors ignites your hunger. When a Survivor is rescued from a Hook at least 24 metres away, Devour Hope receives a Token. 2 Tokens: Gain a 3/4/5% Haste Status Effect 10 seconds after hooking a Survivor, for a duration of 10 seconds. 3 Tokens: Survivors suffer from the Exposed Status Effect. 5 Tokens: Grants the ability to kill Survivors by your own hand.",
+        "name": "Hex: Devour Hope",
+        "rarity": "Very Rare",
+        "type": "Hunt"
+    },
+    {
+        "character": "Spirit",
+        "desc": "Two trapped Hex Totems will spawn in the Trial. When one of the two trapped Hex Totems is cleansed by a Survivor, all Survivors suffer from the Exposed  Status Effect for 40/50/60 seconds. The remaining trapped Hex Totem immediately becomes a Dull Totem.",
+        "name": "Hex: Haunted Ground",
+        "rarity": "Very Rare",
+        "type": "Hunt"
+    },
+    {
+        "character": "Huntress",
+        "desc": "A Hex rooting its power in despair. Your hunt is an irresistible song of dread which muddles your prey's attention. Survivors receive a 2/4/6% Regression penalty when missing any Skill Check. Each time a Survivor is hooked, Huntress Lullaby grows in power: 1-4 Tokens: Time between the Skill Check warning sound and the Skill Check becomes shorter. 5 Tokens: No Skill Check warning.",
+        "name": "Hex: Huntress Lullaby",
+        "rarity": "Very Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "All",
+        "desc": "A Hex rooting its power on hope. You are animated by the power of your Hex Totem when the Survivors are on the verge of escaping. Once the Exit Gates are powered, if there is a Dull Totem remaining on the Map, this Hex is applied to it. While Hex: No One Escapes Death is active, Survivors suffer from the Exposed  Status Effect and your Movement speed is increased by 2/3/4%.",
+        "name": "Hex: No One Escapes Death",
+        "rarity": "Very Rare",
+        "type": "Hunt",
+        "realName": "NOED"
+    },
+    {
+        "character": "Hag",
+        "desc": "A Hex that affects all Survivor's Generator Repair progress. Whenever a Generator is not being repaired by a Survivor, it will immediately and automatically regress its Repair progress at 100/150/200% of the normal Regression speed.",
+        "name": "Hex: Ruin",
+        "rarity": "Very Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Hag",
+        "desc": "A Hex that hinders one's Aura-reading ability. Hitting a Survivor while the Hex Totem is active applies the Blindness Status Effect. This effect applies to the last 2/3/4 Survivors hit.",
+        "name": "Hex: The Third Seal",
+        "rarity": "Very Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "All",
+        "desc": "A Hex rooting its power on hope. The false hope of Survivors fills you with excitement and strengthens your totems. For each Dull Totem and Hex Totem remaining on the Map gain a Token. Gain 10% more Bloodpoints for actions in the Hunter Category for each Token. Survivors' cleansing speed is reduced by 4/5/6% for each Token. Gain a notification when someone starts working on a Hex Totem.",
+        "name": "Hex: Thrill of the Hunt",
+        "rarity": "Rare",
+        "type": "Penalty;BP"
+    },
+    {
+        "character": "Ghost Face",
+        "desc": "Your keen senses are sharpened in the dark Realm of The Entity. Unlocks potential in one's Aura-reading ability. Any Survivor performing a rushed action within 48 metres from your location will have their Aura revealed to you for 6 seconds. I'm All Ears can only be triggered once every 60/50/40 seconds.",
+        "name": "I'm All Ears",
+        "rarity": "Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Plague",
+        "desc": "Your keen senses are sharpened in the dark Realm of The Entity. Unlocks potential in one's Aura-reading ability. Any Survivor performing a rushed action within 48 metres from your location will have their Aura revealed to you for 6 seconds. I'm All Ears can only be triggered once every 60/50/40 seconds.",
+        "name": "Infectious Fright",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "All",
+        "desc": "Unlocks the stealth ability. By standing still for 4/3/2 seconds, you reduce your Terror Radius to 0 metres and thus become stealthy until you move or act again.",
+        "name": "Insidious",
+        "rarity": "Very Rare",
+        "type": "Terror"
+    },
+    {
+        "character": "All",
+        "desc": "Your powerful hold onto the Survivors causes escapes to be nearly impossible. Struggle Effects from a wiggling Survivor are reduced by 75%. Time to wiggle out of your grasp is increased by 4/8/12%.",
+        "name": "Iron Grasp",
+        "rarity": "Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Legion",
+        "desc": "You open Lockers 30/40/50% faster. Survivors who exit Lockers suffer from the Exposed  Status Effect for 15 seconds and their location is revealed for 4 seconds.",
+        "name": "Iron Maiden",
+        "rarity": "Very Rare",
+        "type": "Hunt"
+    },
+    {
+        "character": "Cannibal",
+        "desc": "The trauma caused by your brutal attacks makes crying for help painfully difficult. Dying Survivors' Auras are not revealed to other Survivors when they are standing outside of a range of 32/24/16 metres.",
+        "name": "Knock Out",
+        "rarity": "Rare",
+        "type": "Hunt",
+        "realName": "Bubba Sawyer"
+    },
+    {
+        "character": "Hillbilly",
+        "desc": "Unlike other beasts of The Fog, you have adapted to light. Resistance to Blindness is increased by 60/70/80%. Recovery from Blindness is increased by 50%.",
+        "name": "Lightborn",
+        "rarity": "Very Rare",
+        "type": "Chase"
+    },
+    {
+        "character": "Legion",
+        "desc": "While carrying a Survivor, you suffer no cool-down on missed attacks and successfully hitting another Survivor will pause the carried Survivor's wiggle timer for 2/3/4 seconds.",
+        "name": "Mad Grit",
+        "rarity": "Very Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Pig",
+        "desc": "When a Survivor rescues another Survivor from a Hook that is at least 32 metres away from you, Make Your Choice triggers and applies the Exposed Status Effect on the rescuer for 40/50/60 seconds. Make Your Choice has a cool-down of 40/50/60 seconds.",
+        "name": "Make Your Choice",
+        "rarity": "Very Rare",
+        "type": "Hunt"
+    },
+    {
+        "character": "Demogorgon",
+        "desc": "Your distressing presence drains and weakens your prey. While repairing Generators with less than 50% Repair progression, Survivors are afflicted by the Exhausted Status Effect. Any existing Exhaustion Status Effect timers are paused while the Survivor is repairing a Generator. After ending the Repair action, the Survivor is afflicted by the Exhausted Status Effect for 1/2/3 second(s).",
+        "name": "Mindbreaker",
+        "rarity": "Very Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Doctor",
+        "desc": "Meticulous in your approach, terrifying in your application. While in a Chase, your Terror Radius is increased by 8 metres. Otherwise, your Terror Radius is decreased by 8 metres and your Field of View is increased by 3/5/10°.",
+        "name": "Monitor & Abuse",
+        "rarity": "Very Rare",
+        "type": "Terror"
+    },
+    {
+        "character": "All",
+        "desc": "Your fervent care of the Hooks found in the Basement has aroused The Entity's interest. The Basement Hooks are granted the following bonuses: 3/6/9% faster Entity progression. 5/10/15% increased difficulty on escape attempts. 3/6/9% increased penalty to escape fails.",
+        "name": "Monstrous Shrine",
+        "rarity": "Very Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Oni",
+        "desc": "You seek retribution on those who have wronged you. A Survivor who blinds or stuns you using a Pallet or a Locker becomes your Obsession. Anytime a new Survivor becomes the Obsession, they are affected by the Oblivious Status Effect for 40/50/60 seconds and their Aura is revealed to you for 4 seconds.",
+        "name": "Nemesis",
+        "rarity": "Very Rare",
+        "type": "Hunt"
+    },
+    {
+        "character": "Doctor",
+        "desc": "You are fuelled by your hate for progress. Overcharge a Generator by performing the Damage Generator action. The next Survivor interacting with that Generator is faced with a tremendously difficult Skill Check. Failing the Skill Check results in an additional 3/4/5% Regression penalty. Succeeding the Skill Check grants no progress, but prevents the Generator Explosion.",
+        "name": "Overcharge",
+        "rarity": "Very Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Doctor",
+        "desc": "Your presence alone instils great fear. Survivors within your Terror Radius suffer from inefficiency. Affected Survivors' Item Consumption rates are increased by 80/90/100%.",
+        "name": "Overwhelming Presence",
+        "rarity": "Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Shape",
+        "desc": "You become obsessed with one Survivor. Every time you chase your Obsession and let them escape, you receive a Token up to a maximum of 3 Tokens. Each Token increases your Movement speed by 3/4/5%. Each offensive action spends 1 Token.",
+        "name": "Play With Your Food",
+        "rarity": "Very Rare",
+        "type": "Chase",
+        "realName": "Michael Myers;PWYF"
+    },
+    {
+        "character": "Clown",
+        "desc": "A deep bond with The Entity unlocks great strength. After hooking a Survivor, the next Generator you break is instantly regressed by 25% of its total progression. Normal Generator Regression applies after the damage is done. Pop Goes the Weasel is active for 40/50/60 seconds after the Survivor is hooked.",
+        "name": "Pop Goes The Weasel",
+        "rarity": "Very Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Wraith",
+        "desc": "Your acute tracking ability allows you to hone in on disturbances left by running Survivors. Scratch Marks left by Survivors will spawn slightly/moderately/considerably closer together.",
+        "name": "Predator",
+        "rarity": "Rare",
+        "type": "Hunt"
+    },
+    {
+        "character": "Spirit",
+        "desc": "You become obsessed with one Survivor. Each time a Generator is completed, the Obsession sees your Aura for 5/4/3 seconds. Each time a Generator is completed, all Survivors' locations are revealed to you for 3 seconds. Once all Generators are completed, the Obsession has the Exposed  Status Effect and the Killer can kill the Obsession.",
+        "name": "Rancor",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Nightmare",
+        "desc": "You become obsessed with one Survivor. Each time you hit your Obsession, you increase the Exit Gate Opening time by 4 seconds up to a maximum of 8 additional/12 additional/16 additional seconds. The Obsession is not affected by Remember Me.",
+        "name": "Remember Me",
+        "rarity": "Very Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Shape",
+        "desc": "You become obsessed with one Survivor. Earn a Token for each successful hit that is not dealt to the Obsession. Each Token grants a stack-able 5% cool-down reduction on successful attacks. You can earn up to 8 Tokens. Attacking your Obsession will make you lose 4/3/2 Tokens. You can no longer gain Tokens if your Obsession is sacrificed or killed.",
+        "name": "Save The Best For Last",
+        "rarity": "Very Rare",
+        "type": "Chase",
+        "realName": "Michael Myers;STBFL"
+    },
+    {
+        "character": "Wraith",
+        "desc": "You have a keen vision in the darkness of the night. Your Field of View is increased by 9/12/15 °.",
+        "name": "Shadowborn",
+        "rarity": "Very Rare",
+        "type": "Hunt"
+    },
+    {
+        "character": "All",
+        "desc": "You know where to hit to make them bleed. Wounds inflicted by successful attacks slightly/moderately/considerably increase the Survivor's bleeding frequency and cause the Mangled Status Effect.",
+        "name": "Sloppy Butcher",
+        "rarity": "Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "All",
+        "desc": "The Crows found in the world can communicate directly with you. 100% of the time, cawing Crows give you a visual cue when you are within a range of 20/28/36 metres. Spies from the Shadows has a cool-down of 5 seconds.",
+        "name": "Spies From The Shadows",
+        "rarity": "Very Rare",
+        "type": "Hunt"
+    },
+    {
+        "character": "Spirit",
+        "desc": "Each Pallet you break magnifies the wrath of The Entity. After breaking 4/3/2 Pallets, the next time you are stunned by a Pallet, The Entity will instantly break it. You still suffer from the stun effect penalty.",
+        "name": "Spirit Fury",
+        "rarity": "Rare",
+        "type": "Chase"
+    },
+    {
+        "character": "Nurse",
+        "desc": "You are acutely sensitive to the breathing of your prey. Survivors' Grunts of Pain are 25/50/50% louder and regular breathing is 0/0/25% louder.",
+        "name": "Stridor",
+        "rarity": "Rare",
+        "type": "Hunt"
+    },
+    {
+        "character": "Demogorgon",
+        "desc": "Your eerie presence charges the air and interferes with technology. Putting a Survivor into the Dying State with a Basic Attack causes all Generators within a radius of 32 metres to instantly explode and regress. Surge applies an immediate Regression penalty of 8%. Surge can only be triggered once every 60/50/40 seconds.",
+        "name": "Surge",
+        "rarity": "Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Pig",
+        "desc": "Unlocks potential in one's Aura-reading ability. All regressing Generators will be highlighted by a white Aura. Once regression ends, Generators will be highlighted by a yellow Aura for 8/12/16 seconds. Noises created by Generator Repairs are audible at an additional 8 metres.",
+        "name": "Surveillance",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Huntress",
+        "desc": "Unlocks potential in one's Aura-reading ability. Survivors' Auras are revealed to you for 3 seconds when they enter the Basement and you are more than 32 metres away from the Basement entrance. Territorial Imperative can only be triggered once every 30/25/20 seconds.",
+        "name": "Territorial Imperative",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Nurse",
+        "desc": "Their courage fades in the face of their undeniable mortality. For each Injured, Dying or hooked Survivor, all Survivors receive a stack-able penalty of 3/3.5/4% to their Repair, Healing and Sabotage speed up to a maximum of 12/14/16%.",
+        "name": "Thanatophobia",
+        "rarity": "Very Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Ghost Face",
+        "desc": "Your dark designs and shrewd composure rouse The Entity. After picking up a Survivor, all Generators not being repaired by Survivors are blocked by The Entity and cannot be repaired for the next 16 seconds. Affected Generators are highlighted by a white Aura. Thrilling Tremors can only be triggered once every 100/80/60 seconds.",
+        "name": "Thrilling Tremors",
+        "rarity": "Very Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Hillbilly",
+        "desc": "When a Generator is repaired to 85%, you receive a Loud Noise notification and your Terror Radius is reduced to 0 metres for 8/10/12 seconds.",
+        "name": "Tinkerer",
+        "rarity": "Very Rare",
+        "type": "Terror"
+    },
+    {
+        "character": "Trapper",
+        "desc": "Your presence alone instils great fear. Survivors within your Terror Radius have a 10% greater chance of triggering Skill Checks when repairing, healing or sabotaging. Triggered Skill Checks' success zones are reduced by 40/50/60%.",
+        "name": "Unnerving Presence",
+        "rarity": "Rare",
+        "type": "Terror"
+    },
+    {
+        "character": "All",
+        "desc": "You recuperate faster from missed attacks made with your main weapon. The cool-down of missed Basic Attacks is reduced by 20/25/30%.",
+        "name": "Unrelenting",
+        "rarity": "Very Rare",
+        "type": "Chase"
+    },
+    {
+        "character": "All",
+        "desc": "You have a rudimentary understanding of The Entity's voice. Sporadically hear The Entity's Whisper when standing within a 48/40/32 metres of a Survivor.",
+        "name": "Whispers",
+        "rarity": "Very Rare",
+        "type": "Hunt"
+    },
+    {
+        "character": "Oni",
+        "desc": "Unlocks potential in one's Aura-reading ability. You are mentally alert and aware of key points on the battlefield. The Auras of all Pallets and Windows are revealed to you within a range of 24 metres.When a Survivor is damaged, Zanshin Tactics becomes inactive for 40/35/30 seconds.",
+        "name": "Zanshin Tactics",
+        "rarity": "Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Blight",
+        "desc": "After kicking a Generator , for the next 30 seconds, the first Survivor that interacts with it will scream, revealing their location for 4 seconds, and becoming afflicted with the Exposed Status Effect for 60 seconds. Dragon's Grip has a cool-down of 120/100/80 seconds.",
+        "name": "Dragon's Grip",
+        "rarity": "Rare",
+        "type": "Hunt"
+    },
+    {
+        "character": "Blight",
+        "desc": "A Hex that gains the favour of The Entity when blood is spilt. When a Survivor is hit with a Basic Attack, all Pallets within a radius of 16 metres of your location are held in place by The Entity for 15 seconds and cannot be pulled down by Survivors. Hex: Blood Favour has a cool-down of 60/50/40 seconds.",
+        "name": "Hex: Blood Favour",
+        "rarity": "Very Rare",
+        "type": "Chase"
+    },
+    {
+        "character": "Blight",
+        "desc": "A Hex which maintains the vile powers that flow throughout the Trial. While Hex: Undying is active, Survivors within 2/3/4 meters of any Dull Totem have their Aura revealed. When another Hex Totem is cleansed, that Totem's Hex transfers to the Hex: Undying Totem, deactivating Hex: Undying. Any Tokens the transferred Hex had are transferred as well.",
+        "name": "Hex: Undying",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Twins",
+        "desc": "You protect what little you have and are perceptive to those rummaging through your stockpiles. Receive a Loud Noise notification for 4 seconds when Survivors interact with a Chest or when they pick up an Item within 32/48/64 metres of your location. The Trial begins with up to 2 additional Chests in the environment.",
+        "name": "Hoarder",
+        "rarity": "Rare",
+        "type": "Hunt"
+    },
+    {
+        "character": "Twins",
+        "desc": "Life has been difficult for you, so you'll make it difficult for others. When you damage a Generator, up to 3 other random Generators also begin regressing. If the affected Generators are being repaired, any Survivors repairing them receive a difficult Skill Check. Oppression has a cool-down of 120/100/80 seconds.",
+        "name": "Oppression",
+        "rarity": "Very Rare",
+        "type": "Penalty"
+    },
+    {
+        "character": "Twins",
+        "desc": "As the end nears, you go in for the kill. Each time a Generator is completed, Coup de Grâce grows in power. Gain 1 Token per Generator. Consume 1 Token to increase the distance of your next Lunge Attack by 40/50/60 %.",
+        "name": "Coup de Grâce",
+        "rarity": "Very Rare",
+        "type": "Chase"
+    },
+    {
+        "character": "Trickster",
+        "desc": "Your unmatched showmanship dazzles all. Starstruck activates when you are carrying a Survivor. Whenever a Survivor enters or re-enters your Terror Radius, they suffer from the Exposed Status Effect. The Exposed Status Effect lingers for 26/28/30 seconds after leaving your Terror Radius. Starstruck cools down for 60 seconds once a Survivor is no longer carried.",
+        "name": "Starstruck",
+        "rarity": "Rare",
+        "type": "Hunt",
+        "realName": "Ji-Woon Hak"
+    },
+    {
+        "character": "Trickster",
+        "desc": "A Hex that ensures those lesser than you are properly herded. The Entity blocks a Window for 10/12/14 seconds after a Survivors performs a rushed vault through it. The Hex effects persist as long as the related Hex Totem is standing.",
+        "name": "Hex: Crowd Control",
+        "rarity": "Very Rare",
+        "type": "Chase",
+        "realName": "Ji-Woon Hak"
+    },
+    {
+        "character": "Trickster",
+        "desc": "You're not going to let just anyone into the VIP room. For each of the Survivors you manage to hook, No Way Out gains a Token. When the last Generator is repaired, The Entity blocks both Exit Gate Switches for 10 seconds and an additional 4/6/8 seconds per Token in your possession, up to a combined maximum of 26/34/42 seconds.",
+        "name": "No Way Out",
+        "rarity": "Very Rare",
+        "type": "Penalty",
+        "realName": "Ji-Woon Hak"
+    }
+]

@@ -1,0 +1,588 @@
+[
+    {
+        "character": "Ace Visconti",
+        "desc": "Lady Luck always seems to be throwing something good your way. When retrieving an item from a chest, there is a 100% chance that an add-on of Very Rare rarity or lower will be attached to it. 10/25/50 % chance to find a second add-on of uncommon rarity or lower.",
+        "name": "Ace in The Hole",
+        "rarity": "Very Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "Meg Thomas",
+        "desc": "You are fuelled by unexpected energy when on the verge of escape. Instantly heal one Health State and sprint at 150% of your normal running speed for 5 seconds when the Exit Gates are powered.",
+        "name": "Adrenaline",
+        "rarity": "Very Rare",
+        "type": "Healing"
+    },
+    {
+        "character": "Jeff Johansen",
+        "desc": "Unlocks potential in one's Aura-reading ability. You see the Aura of every Survivor that you rescued from a Hook or who rescued you from one and you completed a Healing action on or who completed one on you. They also see your Aura. This occurs for up to 1/2/3 Survivor(s).",
+        "name": "Aftercare",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Feng Min",
+        "desc": "Your acute senses are on high alert. When the Killer performs a Pallet Break or Generator Damage action, their Aura is revealed to you for 3/4/5 seconds.",
+        "name": "Alert",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Yui Kimura",
+        "desc": "You stand up for yourself, using whatever's on hand to gain an advantage. Press and hold the Active Ability button for 4 seconds while standing beside a dropped Pallet to reset it to its upright position. Any Means Necessary has a cool-down of 140/130/120 seconds.",
+        "name": "Any Means Necessary",
+        "rarity": "Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "Adam Francis",
+        "desc": "You start the Trial with a -25 % progression penalty for Skill Checks to heal Survivors. For every successful Skill Check completed while healing a Survivor, you receive a Token for a maximum of 3/4/5 Tokens. Each Token grants you a +15 % bonus progression for a successful Skill Check while healing Survivors. Great Skill Checks cannot be performed while using Autodidact and is not active when using a Med-Kit to heal.",
+        "name": "Autodidact",
+        "rarity": "Very Rare",
+        "type": "Healing"
+    },
+    {
+        "character": "Steve Harrington",
+        "desc": "While you have a reputation for being self-centred, you risk it all to help those in need. When you unhook a Survivor, the unhooked Survivor leaves no Scratch Marks or Blood Trail for the next 4/6/8 seconds. Both you and the Killer see each other's Aura for 4 seconds.",
+        "name": "Babysitter",
+        "rarity": "Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Nea Karlsson",
+        "desc": "Your agility is incomparable. Cat-like reflexes reduce your stagger duration from falls by 75 % and muffle your grunts from falling by 100 %. Upon landing, start sprinting at 150 % of your normal running speed for a maximum of 3 seconds if not exhausted. Causes the Exhausted Status Effect for 60/50/40 seconds.",
+        "name": "Balanced Landing",
+        "rarity": "Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "Nancy Wheeler",
+        "desc": "You seek justice and uncover the truth no matter what obstacle stands in your way. The Aura of the Generator you are currently repairing is revealed to all other Survivors located within 32 metres. If the Killer downs a Survivor while you are repairing a Generator, you see the Auras off all other Survivors for 8/9/10 seconds.",
+        "name": "Better Together",
+        "rarity": "Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Kate Denson",
+        "desc": "You are a battler and do everything to escape a foe's grasp. Your struggling effects on the Killer are increased by 25/50/75 %. You obscure the Killer's ability to see Hook Auras within 10/12/14 metres.",
+        "name": "Boil Over",
+        "rarity": "Very Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "Dwight Fairfield",
+        "desc": "Unlocks potential in one's Aura-reading ability. Allies' Auras are revealed to you when they are within a range of 20/28/36 metres.",
+        "name": "Bond",
+        "rarity": "Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Bill Overbeck",
+        "desc": "You are fuelled with an unexpected energy when saving an Ally from a Hook within the Killer's Terror Radius. After unhooking a Survivor within the Killer's Terror Radius, for 15 seconds,any damage taken that would put the unhooked Survivor into the Dying State will instead apply the Deep Wound Status Effect. The Survivor has 10/15/20 seconds to mend themselves. If the unhooked Survivor takes any damage while affected by Deep Wound or if its timer ends, the unhooked Survivor is immediately put into the Dying State.",
+        "name": "Borrowed Time",
+        "rarity": "Very Rare",
+        "type": "Healing",
+        "realName": "BT"
+    },
+    {
+        "character": "Claudette Morel",
+        "desc": "You transform plants found around The Campfire into tinctures that slow down bleeding. Healing Speed and Healing Item Efficiency is increased by 11/22/33 %.",
+        "name": "Botany Knowledge",
+        "rarity": "Very Rare",
+        "type": "Healing"
+    },
+    {
+        "character": "Jeff Johansen",
+        "desc": "Any time you are unhooked or unhook yourself, the Hook breaks and the Killer's Aura is shown to you for 4/5/6 seconds.",
+        "name": "Breakdown",
+        "rarity": "Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Yui Kimura",
+        "desc": "You kick into high gear when someone's in trouble, inspiring them to overcome any obstacle. When within 6 metres of a carried Survivor, you gain the Haste Status Effect, moving at an increased speed of 5/6/7 %. The carried Survivor's wiggle speed is increased by 20%.",
+        "name": "Breakout",
+        "rarity": "Very Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "Ash Williams",
+        "desc": "Unlocks potential in one's Aura-reading ability. The recovery progress of dying Survivors can be determined by the intensity of their Auras IconHelp auras.png at a distance of up to 48 metres. When you heal a Survivor from the Dying State to Injured, both the healed Survivor and yourself see the Killer's Aura for a duration of 4/5/6 seconds.",
+        "name": "Buckle Up",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Jake Park",
+        "desc": "Animals seem to trust you as they often stay calm in your presence. Reduces chances of alerting Crows by 80/90/100 %. Your calm spirit can overcome the urge to scream.",
+        "name": "Calm Spirit",
+        "rarity": "Very Rare",
+        "type": "Stealth"
+    },
+    {
+        "character": "Steve Harrington",
+        "desc": "Life has taught you the importance of friendship which has given you strength. While you are on the Hook in the Struggle Phase, Camaraderie activates. If another Survivor is within 16 metres of your Hook while Camaraderie is activated, the Struggle Phase timer is paused for 26/30/34 seconds.",
+        "name": "Camaraderie",
+        "rarity": "Very Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "Kate Denson",
+        "desc": "When performing a fast vault or leaving a Locker in a sprint, you leave no Scratch Marks for 3 seconds. Dance With Me has a cool-down of 60/50/40 seconds.",
+        "name": "Dance With Me",
+        "rarity": "Very Rare",
+        "type": "Stealth"
+    },
+    {
+        "character": "All",
+        "desc": "Unlocks potential in one's Aura-reading abilities. Each time a Generator is completed, the Killer's Aura is revealed to you for 5 seconds. When the last Generator is powered, the Killer's Aura is revealed to you for 5/7/10 seconds.",
+        "name": "Dark Sense",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "David King",
+        "desc": "Activate-able Perk. You can take a beating. When Injured, tap into your adrenaline bank and dash forward quickly to avoid damage. Press the Active Ability button while running to dash forward. During the dash, you avoid damage. Causes the Exhausted Status Effect for 60/50/40 seconds.",
+        "name": "Dead Hard",
+        "rarity": "Very Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "Laurie Strode",
+        "desc": "Using whatever is at hand, you stab at your aggressor in an ultimate attempt to escape. After being unhooked or unhooking yourself, Decisive Strike will become active and usable for 40/50/60 seconds. While Decisive Strike is active, when grabbed by the Killer, succeed a Skill Check to automatically escape the Killer's grasp and stun them for 5 seconds. Succeeding or failing the Skill Check will disable Decisive Strike. Successfully stunning the Killer will result in you becoming the Obsession. Increases your chances of being the Obsession.",
+        "name": "Decisive Strike",
+        "rarity": "Very Rare",
+        "type": "Evasion",
+        "realName": "DS"
+    },
+    {
+        "character": "Adam Francis Francis",
+        "desc": "After performing a Safe Hook Rescue on another Survivor, the Perk activates. You now have a 100 % chance to unhook yourself during the escape attempt. A successful Deliverance from the Hook triggers the Broken Status Effect for 100/80/60 seconds.",
+        "name": "Deliverance",
+        "rarity": "Very Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "David Tapp",
+        "desc": "Unlocks potential in one's Aura-reading ability. After a Generator is completed, the Auras of Generators, Chests and Totems within 32/48/64 metres are revealed to you for 10 seconds. If you are holding a Map that can track Objectives, Generators revealed by Detective's Hunch are added to the Map.",
+        "name": "Detective's Hunch",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Jeff Johansen",
+        "desc": "You start the Trial with 3 Tokens. When your Aura would be shown to the Killer, the Perk activates and a Token is consumed. For the next 6/8/10 seconds while the Perk is activated, your Aura and Scratch Marks will not be shown to the Killer. Distortion does not activate when you are in the Dying State or affected by Traps.",
+        "name": "Distortion",
+        "rarity": "Very Rare",
+        "type": "Stealth"
+    },
+    {
+        "character": "Adam Francis",
+        "desc": "Activate-able Perk. Standing within the Killer's Terror Radius while not in a Chase for 45 seconds activates Diversion. Once Diversion is activated, press the Active Ability button while crouched and motionless to throw a pebble, which creates a loud noise notification for the Killer at a distance of 10/15/20 metres. Diversion deactivates once it has been used.",
+        "name": "Diversion",
+        "rarity": "Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "All",
+        "desc": "Unlocks potential in one's Aura-reading ability. Paranoia paired with your horror of failure helps prepare you from repeating the same mistakes. The Auras of 3 Generators in closest proximity to each other are revealed to you for 30/45/60 seconds, at the start of the Trial and each time a Generator is completed. If you are holding a Map that can track Objectives, Generators revealed by Déjà Vu are added to the Map.",
+        "name": "Déjà Vu",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Claudette Morel",
+        "desc": "Unlocks potential in one's Aura-reading ability. Dying or Injured Allies' Auras are revealed to you when within 64/96/128 metres of range. Empathy does not reveal Auras of Allies when they are in the Killer's direct contact.",
+        "name": "Empathy",
+        "rarity": "Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Nancy Wheeler",
+        "desc": "When you have a goal in mind, there's no turning back; better to ask forgiveness than permission. You can see your own Scratch Marks at all times. While uninjured, you walk 10/15/20 % faster.",
+        "name": "Fixated",
+        "rarity": "Very Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "Ash Williams",
+        "desc": "You have an uncanny ability to escape the inevitable. While in the Dying State, 50 % of your recovery progression is converted into wiggle progression when you are picked up by the Killer, up to a maximum of 40/45/50 % total wiggle progression.",
+        "name": "Flip-Flop",
+        "rarity": "Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "Jane Romero",
+        "desc": "When your mind is set, there better be no one standing in your way. While standing in a Locker IconHelp lockers.png for 3 seconds, Head On activates. While Head On is activated, performing a rushed action to leave a Locker stuns the Killer for 3 seconds if they are standing within range. Causes the Exhausted Status Effect for 60/50/40 seconds if the stun was successful.",
+        "name": "Head On",
+        "rarity": "Very Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "All",
+        "desc": "The growing odds of a successful escape fill you with hope and give you wings. As soon as the Exit Gates are powered, you gain a 5/6/7 % Haste Status Effect for 120 seconds.",
+        "name": "Hope",
+        "rarity": "Very Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "Nancy Wheeler",
+        "desc": "You look inwards and trust your instincts when you feel lost and alone. Each time you cleanse a Totem, Inner Strength activates. While Inner Strength is activated, hiding inside a Locker for 10/9/8 seconds while Injured automatically heals you to the Healthy State. Inner Strength does not activate if you are afflicted by the Broken aStatus Effect.",
+        "name": "Inner Strength",
+        "rarity": "Very Rare",
+        "type": "Healing"
+    },
+    {
+        "character": "Jake Park",
+        "desc": "You're able to concentrate and enter a meditative-like state to numb some pain. Grunts of Pain caused by injuries are reduced by 50/75/100 %.",
+        "name": "Iron Will",
+        "rarity": "Rare",
+        "type": "Stealth"
+    },
+    {
+        "character": "All",
+        "desc": "Unlocks potential in one's Aura-reading ability. While you are on the Hook, all Survivor Auras are revealed to all Survivors. If the Killer is within a range of 8/12/16 metres, their Aura is also revealed to all Survivors. While any other Survivor is on the Hook, all Survivor Auras are revealed to you. If the Killer is within a range of 8/12/16 metres, their Aura is also revealed to you.",
+        "name": "Kindred",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Dwight Fairfield",
+        "desc": "You're able to organise a team to cooperate more efficiently. Increases the other Survivors' Healing, Sabotage, Unhooking, Cleansing, Exit Gate Opening, and Chest Searching speeds by 15/20/25 % when they are within a range of 8 metres from you. Survivors can only be affected by one Leader effect at a time. This effect persists on other Survivors for 15 seconds after leaving Leader's range.",
+        "name": "Leader",
+        "rarity": "Very Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "Bill Overbeck",
+        "desc": "You'll get the job done... No matter the cost. When you are the last Survivor remaining in the Trial, the Aura of the Hatch is revealed to you within a range of 24/28/32 metres.",
+        "name": "Left Behind",
+        "rarity": "Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "All",
+        "desc": "Your running is light and soft, making your tracks harder to follow. Scratch Marks stay visible 1/2/3 seconds less than normal.",
+        "name": "Lightweight",
+        "rarity": "Rare",
+        "type": "Stealth"
+    },
+    {
+        "character": "Feng Min",
+        "desc": "After performing a rushed vault, break into a sprint at 150 % of your normal running speed for a maximum of 3 seconds. Causes the Exhausted Status Effect for 60/50/40 seconds.",
+        "name": "Lithe",
+        "rarity": "Very Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "Yui Kimura",
+        "desc": "You've had your share of scrapes and bruises, but luck's always on your side. Lucky Break activates any time you are injured. While Lucky Break is active, you won't leave trails of blood for a total of 120/150/180 seconds. Lucky Break becomes permanently deactivated for the remainder of the Trial once the total duration has elapsed.",
+        "name": "Lucky Break",
+        "rarity": "Very Rare",
+        "type": "Stealth"
+    },
+    {
+        "character": "Ash Williams",
+        "desc": "Evil has a way of always finding you. After you earn 3 Protection Hit Score Events, Mettle of Man activates. Once activated, the next occasion that would put you into the Dying State from the Injured State is ignored. The next time you heal back to full health, your Aura will be revealed to the Killer when you are farther than 12/14/16 metres from the Killer. Mettle of Man will deactivate the next time you are put into the Dying State. Increases your chances of being the Obsession.",
+        "name": "Mettle Of Man",
+        "rarity": "Very Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "David King",
+        "desc": "You are affected by the Broken Status Effect for the duration of the Trial. Your thick blood coagulates practically instantly. You do not leave Pools of Blood. Grunts of Pain caused by injuries are reduced by 0/25/50 % at any time. Grants the ability to fully recover from the Dying State.",
+        "name": "No Mither",
+        "rarity": "Very Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "All",
+        "desc": "It is inconceivable to leave someone behind. Once at least one Exit Gates has been opened, triggering the Endgame Collapse, gain 50/75/100 % more Bloodpoints for actions in the Altruism Category and perform them 30/40/50 % quicker. The Auras of all other Survivors are revealed to you.",
+        "name": "No One Left Behind",
+        "rarity": "Very Rare",
+        "type": "Aura;BP"
+    },
+    {
+        "character": "Laurie Strode",
+        "desc": "A supernatural bond links you to the Killer. If you are looking in the Killer's direction, your link will reveal your Auras to each other. This effect applies only if you are outside of the Killer's Terror Radius. As the Killer's Obsession, this effect applies to a maximum range of 56/64/72 metres. Otherwise, it applies to a maximum range of 44/56/64 metres. Increases your chances of being the Obsession.",
+        "name": "Object of Obsession",
+        "rarity": "Very Rare",
+        "type": "Aura",
+        "realName": "OoO"
+    },
+    {
+        "character": "Ace Visconti",
+        "desc": "Strengthens the potential of you and your team's Aura-reading abilities. Increases Aura-reading ranges by 4/6/8 metres.",
+        "name": "Open-Handed",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Quentin",
+        "desc": "You have a knack for finding medicine. Searches through Chests are 40/60/80 % faster and the noises they cause along with their hearing distance are reduced by 8 metres. Pharmacy guarantees an Emergency Med-Kit on your first completed Chest Search.",
+        "name": "Pharmacy",
+        "rarity": "Very Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "All",
+        "desc": "Unlocks potential in one's Aura-reading ability. The Auras of Chests are revealed to you when standing within 16/24/32 metres of range. Grants a considerably better chance at finding an Item of a higher Rarity from Chests.",
+        "name": "Plunderer's Instinct",
+        "rarity": "Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "Jane Romero",
+        "desc": "Achieving goals boosts your confidence. After a Generator is completed, you leave no Scratch Marks for 6/8/10 seconds.",
+        "name": "Poised",
+        "rarity": "Very Rare",
+        "type": "Stealth"
+    },
+    {
+        "character": "All",
+        "desc": "You have the undeniable capability to sense danger. Get an auditory warning when looking in the direction of the Killer in a 45° cone within a range of 36 metres. Premonition has a cool-down of 60/45/30 seconds each time it activates. Premonition trumps any of the Killer's stealth abilities.",
+        "name": "Premonition",
+        "rarity": "Very Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "Dwight Fairfield",
+        "desc": "Increases Repair speed for all repairing Survivors by 10 % for each other Survivor within a range of 4 metres. Gain 50/75/100 % more Bloodpoints for cooperative Actions. Survivors can only be affected by one Prove Thyself effect at a time.",
+        "name": "Prove Thyself",
+        "rarity": "Very Rare",
+        "type": "Objective;BP"
+    },
+    {
+        "character": "Meg Thomas",
+        "desc": "You do not make as much noise as others when quickly vaulting over obstacles or hiding in Lockers. The vault and hide actions' noise detection and audio range is reduced by 100 %. Quick & Quiet can only be triggered once every 30/25/20 seconds.",
+        "name": "Quick & Quiet",
+        "rarity": "Rare",
+        "type": "Stealth"
+    },
+    {
+        "character": "All",
+        "desc": "You are motivated in dire situations. Grants 3/6/9 % increased Healing, Sabotage, Unhooking, Vaulting, Cleansing, Exit Gate Opening, and Chest Searching speeds while Injured.",
+        "name": "Resilience",
+        "rarity": "Very Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "Jake Park",
+        "desc": "Unlocks the ability to sabotage without a Toolbox at 50 % of the normal Sabotage speed. Hooks and Bear Traps you sabotage stay broken for an extra 10/20/30 seconds.",
+        "name": "Saboteur",
+        "rarity": "Very Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "Steve Harrington",
+        "desc": "When you have healed other Survivors for the equivalent of one health state. Second Wind activates. If you are already afflicted by teh Broken status effect, Second Wind does not activate. While Second Wind is activated, the next time you are unhooked or you unhook yourself, you are affected by the Broken status effect. After a total duration of 30 seconds, Second Wind automatically heals you from injured to healthy. Second Wind deactivated once you become healthy or if you are put into the dying state before Second Wind successfully triggers. You lose the Broken status effect.",
+        "name": "Second Wind",
+        "rarity": "Very Rare",
+        "type": "Healing"
+    },
+    {
+        "character": "Claudette Morel",
+        "desc": "Unlocks the ability to heal yourself without a Med-Kit at 50 % of the normal Healing speed. Increases the efficiency of Med-Kit self-heal by 10/15/20 %.",
+        "name": "Self-Care",
+        "rarity": "Very Rare",
+        "type": "Healing"
+    },
+    {
+        "character": "All",
+        "desc": "You have developed an efficient way to get out of Bear Traps and Hooks. Grants up to 3 extra escape attempts on the Hook. The odds of freeing yourself from Bear Traps are increased by 15/20/25 %.",
+        "name": "Slippery Meat",
+        "rarity": "Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "All",
+        "desc": "You have the undeniable capability to sense danger. Get an auditory warning when looking in the direction of Killer Traps and Totems in a 45° cone within a range of 8/10/12 metres. Small Game has a cool-down of 15/12/10 seconds each time it activates. Only works on Traps that are set by Killers.",
+        "name": "Small Game",
+        "rarity": "Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "Laurie Strode",
+        "desc": "As more of your friends fall to the Killer, you become shrouded in isolation and the Killer's Aura-reading abilities towards you are disrupted. Your Aura cannot be read by the Killer within a maximum range of 20/22/24 metres for each killed or sacrificed Survivor. Increases your chances of being the Obsession.",
+        "name": "Sole Survivor",
+        "rarity": "Very Rare",
+        "type": "Stealth"
+    },
+    {
+        "character": "Jane Romero",
+        "desc": "Sharing painful experiences has the power to heal. While injured, healing a Survivor without using a Med-Kit also heals you at a 40/45/50 % conversion rate.",
+        "name": "Solidarity",
+        "rarity": "Rare",
+        "type": "Healing"
+    },
+    {
+        "character": "All",
+        "desc": "An unnatural tingle warns you of impending doom. Get notified when the Killer is looking directly in your direction and standing within a range of 36 metres. When Spine Chill is active, Skill Check trigger odds are increased by 10 % with success zones reduced by 10 % and your Repair, Heal and Sabotage speeds are increased by 2/4/6 %.",
+        "name": "Spine Chill",
+        "rarity": "Very Rare",
+        "type": "Objective",
+        "realName": "cat;gat"
+    },
+    {
+        "character": "Meg Thomas",
+        "desc": "When starting to run, break into a sprint at 150 % of your normal running speed for a maximum of 3 seconds. Causes the Exhausted Status Effect for 60/50/40 seconds.",
+        "name": "Sprint Burst",
+        "rarity": "Very Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "David Tapp",
+        "desc": "Getting close to the Killer fills you with determination. For each 15 seconds you are standing within the Killer's Terror Radius and are not in a Chase, you gain a Token up to a maximum of 2/3/4 Tokens. When Stake Out has at least 1 Token, Good Skill Checks are considered Great Skill Checks and consume 1 Token.",
+        "name": "Stake Out",
+        "rarity": "Very Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "Nea Karlsson",
+        "desc": "Long nights out taught you to do a lot with what you've got. Reduces Item Consumption rate by 15/20/25 % for you and Allies within a range of 8 metres. Once out of range, this effect persists for 15 seconds.",
+        "name": "Streetwise",
+        "rarity": "Very Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "Feng Min",
+        "desc": "You are apt at handling machinery with the greatest care and precision. The noises caused by your Repairs and their hearing distance are reduced by 8 metres. On a failed Repair Skill Check, there is a 30/40/50 % chance that the Generator Explosion will be prevented.",
+        "name": "Technician",
+        "rarity": "Rare",
+        "type": "Stealth"
+    },
+    {
+        "character": "David Tapp",
+        "desc": "There is nothing stopping you. Your ferocious tenacity in dire situations allows you to crawl 30/40/50 % faster and recover at the same time.",
+        "name": "Tenacity",
+        "rarity": "Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "All",
+        "desc": "You perform at your best when you are under extreme stress. Great Skill Check success zones when repairing, healing and sabotaging get 10/20/30 % bigger when you are Injured.",
+        "name": "This Is Not Happening",
+        "rarity": "Very Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "Bill Overbeck",
+        "desc": "Past battles have taught you a thing or two about survival. Grants the ability to fully recover from the Dying State once per Trial. Increases the Dying State Recovery speed by 25/30/35 %.",
+        "name": "Unbreakable",
+        "rarity": "Very Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "Ace Visconti",
+        "desc": "All will be well in the end; you just know it. Your confidence strengthens the feeling of hope for those around you. For each other Survivor still alive, grant a 1/2/3 % Luck Bonus to all remaining Survivors.",
+        "name": "Up The Ante",
+        "rarity": "Very Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "Nea Karlsson",
+        "desc": "Years of evading the cops taught you a thing or two about stealth. Your Movement speed while crouching is increased by 90/95/100 %.",
+        "name": "Urban Evasion",
+        "rarity": "Very Rare",
+        "type": "Stealth"
+    },
+    {
+        "character": "Quentin",
+        "desc": "You look over your friends even in dire situations. You and your Allies within a range of 8 metres recover from Exhaustion, Haemorrhage, Mangled, Hindered and Blindness Status Effects 10/15/20 % faster. Once out of range, this effect persists for 15 seconds.",
+        "name": "Vigil",
+        "rarity": "Very Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "Quentin",
+        "desc": "Unlocks potential in one's Aura-reading ability. Once all Generators are powered, Exit Gates are revealed to you when within a range of 128 metres. While opening the Exit Gates, reveal your Aura to other Survivors within a range of 128 metres. While Wake Up! is active, you open Exit Gates 5/10/15 % faster.",
+        "name": "Wake Up!",
+        "rarity": "Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "All",
+        "desc": "Helping others heightens your morale. For each Survivor you rescue from a Hook, gain an additional 100 % speed increase to healing up others for 30/60/90 seconds. Cumulative Healing Speed bonuses cannot exceed 100 %.",
+        "name": "We'll Make It",
+        "rarity": "Very Rare",
+        "type": "Healing"
+    },
+    {
+        "character": "David King",
+        "desc": "Your few friends deserve the best protection. Each time you perform a Safe Hook Rescue or take a Protection Hit for a Survivor, gain a stack-able 25 % Bonus to all Bloodpoint gains up to a maximum of 50/75/100 %. The Bonus Bloodpoints are only awarded post-Trial.",
+        "name": "We're Gonna Live Forever",
+        "rarity": "Rare",
+        "type": "Objective;BP",
+        "realName": "WGLF"
+    },
+    {
+        "character": "Kate Denson",
+        "desc": "Unlocks potential in one's Aura-reading ability. Auras of Pallets IconHelp pullDown.png and Vaults are revealed to you when within a range of 20 metres. Windows of Opportunity has a cool-down of 30/25/20 seconds when vaulting or dropping a Pallet during a Chase.",
+        "name": "Windows Of Opportunity",
+        "rarity": "Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Felix Richter",
+        "desc": "You're remarkably focused on your means of escape. You see the Auras of Generators within 32 metres. Anytime a Generator is completed, Visionary is disabled for 20/18/16 seconds.",
+        "name": "Visionary",
+        "rarity": "Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Felix Richter",
+        "desc": "You refuse to fail, even during your darkest hour. Increases Healing and Unhooking speeds by 10/12/14 % for each injured, hooked or dying Survivor.",
+        "name": "Desperate Measures",
+        "rarity": "Very Rare",
+        "type": "Healing"
+    },
+    {
+        "character": "Felix Richter",
+        "desc": "You know how to get the most out of your tools. Once per Trial, a depleted Item will refill 30/40/50 % of its Charges after 10 seconds.",
+        "name": "Built to Last",
+        "rarity": "Very Rare",
+        "type": "Aura"
+    },
+    {
+        "character": "Élodie Rakoto",
+        "desc": "You have a careful eye that notices what many overlook. Start the Trial with 3 Tokens. When a Chest has already been opened, consume 1 Token to rummage through it for an Item. Rummage through Chests 40/60/80 % faster. Rummaging is only available once per Chest.",
+        "name": "Appraisal",
+        "rarity": "Rare",
+        "type": "Item"
+    },
+    {
+        "character": "Élodie Rakoto",
+        "desc": "Your adventures lifestyle requires moments of crafty misdirection. Interact with a Locker while holding the Sprint button to trigger a Loud Noise notification for the Killer at your location instead of entering the Locker. You will not leave any Scratch Marks for 3 seconds. Deception can only be triggered once every 60/50/40 seconds.",
+        "name": "Deception",
+        "rarity": "Very Rare",
+        "type": "Stealth"
+    },
+    {
+        "character": "Élodie Rakoto",
+        "desc": "You've never given up and you're not about to start now. While being carried by The Killer, reaching 35/30/25 % Wiggle progression activates Power Struggle. While Power Struggle is active, you can drop a nearby, standing Pallet to stun The Killer and be released. Power Struggle is deactivated when it triggers successfully.",
+        "name": "Power Struggle",
+        "rarity": "Very Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "Yun-Jin Lee",
+        "desc": "Sometimes the sacrifice of others is necessary to get ahead. Whenever another Survivor is hooked, you gain 1/2/3 Token(s). You consume all Tokens after a Great Skill Check on a Generator. Each Token consumed grants an additional Progression bonus of 1 % for Great Skill Checks when repairing Generators.",
+        "name": "Fast Track",
+        "rarity": "Rare",
+        "type": "Objective"
+    },
+    {
+        "character": "Yun-Jin Lee",
+        "desc": "When your rival makes a mistake, you seize the opportunity. After stunning the Killer with a Pallet, break into a sprint a 150 % of your normal running speed for a maximum of 4 seconds. Smash Hit causes the Exhausted Status Effect for 60/50/40 seconds. Smash Hit cannot be used when Exhausted.",
+        "name": "Smash Hit",
+        "rarity": "Very Rare",
+        "type": "Evasion"
+    },
+    {
+        "character": "Yun-Jin Lee",
+        "desc": "Life's unforgiving. The more confirmation you get of that, the more prepared you become. Whenever another Survivor within 12 metres of you is hit with a Basic or Special Attack, Self-Preservation activates. Your Scratch Marks are hidden for 6/8/10 seconds. Grunts of Pain caused by injuries are reduced by 100 % for 6/8/10 seconds. You do not leave any Pools of Blood for 6/8/10 seconds.",
+        "name": "Self-Preservation",
+        "rarity": "Very Rare",
+        "type": "Stealth"
+    }
+]

@@ -1,0 +1,46 @@
+.loadout {
+  width: 65vw;
+  h3 {
+    color: white;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 2px;
+  }
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.choose-perk {
+  background: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  input {
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+.ant-modal-content {
+  background-color: black;
+  color: white;
+  .ant-modal-body {
+    height: 75vh;
+    overflow-y: scroll;
+  }
+  .ant-modal-header {
+    background-color: black;
+    .ant-modal-title {
+      color: white;
+    }
+  }
+}
+.ant-modal-close-x {
+  color: #fff;
+}
