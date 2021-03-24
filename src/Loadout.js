@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import domtoimage from "dom-to-image";
 import { Input, Modal, message, Button, Tooltip } from "antd";
-import { SaveOutlined, PictureOutlined, UndoOutlined } from "@ant-design/icons";
+import {
+  PictureOutlined,
+  UndoOutlined,
+  ShareAltOutlined,
+} from "@ant-design/icons";
 import Perk from "./Perk";
 import "./Loadout.scss";
 
@@ -161,13 +165,13 @@ function Loadout({ allPerks, title, selected, player }) {
       <h3>
         {title}
         <div>
-          <Tooltip title="Save url">
+          <Tooltip title="Share url">
             <Button
               shape="circle"
               type="link"
               onClick={handleSave}
               disabled={survivor.some((el) => Boolean(el) === false)}
-              icon={<SaveOutlined />}
+              icon={<ShareAltOutlined />}
             />
           </Tooltip>
 
@@ -195,7 +199,6 @@ function Loadout({ allPerks, title, selected, player }) {
           <Perk onClick={() => handleClick(index)} perk={perk} />
         ))}
       </section>
-      {/* </Popover> */}
     </div>
   );
 }
