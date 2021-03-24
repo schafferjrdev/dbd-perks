@@ -18,19 +18,23 @@ function formatDesctription(desc) {
     const phrase = desc
       .replaceAll(/[.]\s/gim, ".<br/>")
       .replaceAll(
-        /\s\d+\s[%]|\s\d+\s\w{2,7}\b|\s\d+[%]/gim,
-        '<b class="yellow">$&</b>'
+        /(\s|[-+])\d+\s[%]|\s\d+\s\w{2,7}\b|\s\d+[%]/gim,
+        '<b class="yellow big">$&</b>'
       )
       .replaceAll(
-        /(\d\.\d|\d+)[/](\d\.\d|\d+)[/](\d\.\d|\d+)(\s\w{1,9}\b|\w{1,9}\b|\s[%]|[%])/gim,
+        /(\d\.\d|\d+)[/](\d\.\d|\d+)[/](\d\.\d|\d+)(\s\w{1,9}\b|\w{1,9}\b|\s[%°]|[%°])/gim,
         "<b class='yellow'>$1</b>/<b class='green'>$2</b>/<b class='purple'>$3</b> <b>$4</b>"
       )
       .replaceAll(/exit\sgates/gim, "<b class='orange'>$&</b>")
       .replaceAll(/skill\schecks?/gim, '<b class="orange">$&</b>')
       .replaceAll(/killer's|killers?/gim, "<b class='red'>$&</b>")
-      .replaceAll(/auras?/gim, '<b class="orange">$&</b>')
+      .replaceAll(
+        /(auras?)\s|\s(auras?)([.,])/gim,
+        '<b class="orange"> $1 $2</b>$3'
+      )
       .replaceAll(/dying\sstate/gim, '<b class="red">$&</b>')
       .replaceAll(/bloodpoints?/gim, "<b class='red'>$&</b>")
+      .replaceAll(/exhausted?/gim, "<b >$&</b>")
       .replaceAll(
         /(slightly)[/](moderately)[/](considerably)/gim,
         "<b class='yellow'>$1</b>/<b class='green'>$2</b>/<b class='purple'>$3</b>"
