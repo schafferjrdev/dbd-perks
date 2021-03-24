@@ -62,3 +62,7 @@ section {
     color: #fff;
   }
 }
+
+.ant-btn-link[disabled] {
+  color: #333;
+}

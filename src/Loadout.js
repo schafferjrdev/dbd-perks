@@ -109,7 +109,7 @@ function Loadout({ allPerks, title, selected, player }) {
 
   const handlePrint = () => {
     const node = document.querySelector("section");
-    domtoimage.toPng(node).then(function (dataUrl) {
+    domtoimage.toPng(node, { bgcolor: "#000" }).then(function (dataUrl) {
       var link = document.createElement("a");
       link.download = `${player ? "survivor" : "killer"}-loadout.png`;
       link.href = dataUrl;
