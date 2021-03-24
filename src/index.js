@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./index.scss";
 import "antd/dist/antd.css";
 import Loadout from "./Loadout";
 import survivorPerks from "./data/survivor-perks.json";
@@ -37,24 +37,6 @@ function App() {
         console.log(error);
       }
     }
-
-    // btoa(JSON.stringify({
-    //   player: false,
-    //   perks: [1, 2, 3, 4],
-    // }));
-    // console.log(JSON.parse(atob(save)));
-
-    // if (save.length === 13) {
-    //   let values = save
-    //     .replaceAll(/(^.)(.{3})(.{3})(.{3})(.{3})/gm, "$1;$2;$3;$4;$5")
-    //     .split(";");
-    //   const [player, ...perks] = values;
-
-    //   // const obj = { player: player, perks: perks };
-    //   console.log("Carregado da url", Boolean(Number(player)), perks);
-    //   setPlayer(Boolean(Number(player)));
-    //   setSelected(perks);
-    // }
   }, []);
 
   return (

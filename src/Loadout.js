@@ -93,6 +93,15 @@ function Loadout({ allPerks, title, selected, player }) {
     setChooser({ open: false, index: null });
   };
 
+  function copyToClipboard(text) {
+    const elem = document.createElement("textarea");
+    elem.value = text;
+    document.body.appendChild(elem);
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+  }
+
   const handleSave = (e) => {
     console.log(survivor);
     if (!survivor.some((el) => Boolean(el) === false)) {
@@ -100,7 +109,7 @@ function Loadout({ allPerks, title, selected, player }) {
       const savedObj = { player: player, perks: perks };
       const path = btoa(JSON.stringify(savedObj));
       window.location.hash = path;
-      navigator.clipboard.writeText(window.location.href);
+      copyToClipboard(window.location.href);
       message.success("URL copied to clipboard!");
     } else {
       window.history.pushState(

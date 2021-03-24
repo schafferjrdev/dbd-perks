@@ -18,7 +18,7 @@
   -webkit-justify-content: center;
 
   img {
-    width: 120px;
+    width: 160%;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     user-select: none;
@@ -124,4 +124,15 @@
 
 .big {
   font-size: 120%;
+}
+
+@media only screen and (max-width: 600px) {
+  .perk-diagram {
+    padding: 0;
+    min-height: 170px;
+  }
+  .perk {
+    width: 60px;
+    height: 60px;
+  }
 }

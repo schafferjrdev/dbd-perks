@@ -66,3 +66,19 @@ section {
 .ant-btn-link[disabled] {
   color: #333;
 }
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 75px;
+  }
+  .loadout {
+    width: 95vw;
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .choose-perk {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

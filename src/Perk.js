@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { isMobile } from "react-device-detect";
 import { Popover } from "react-tiny-popover";
 
 import "./Perk.scss";
@@ -47,16 +48,32 @@ function formatDesctription(desc) {
 const Perk = ({ onClick, perk, selected }) => {
   const [open, setOpen] = useState(false);
 
-  const selectPerk = () => {
-    // setPerk(survivorPerks[Math.round(Math.random(0, 20) * 10)]);
-    setOpen(false);
-    onClick();
+  const handleClick = () => {
+    if (isMobile) {
+      setOpen(!open);
+    } else {
+      setOpen(false);
+      onClick();
+    }
+  };
+
+  const handleDoubleClick = () => {
+    if (isMobile) {
+      setOpen(false);
+      onClick();
+    } else {
+      return;
+    }
   };
 
   return (
     <Popover
       isOpen={perk ? open : false}
-      positions={["right", "bottom", "left", "top"]} // preferred positions by priority
+      positions={
+        isMobile
+          ? ["bottom", "top", "right", "left"]
+          : ["right", "left", "bottom", "top"]
+      }
       content={
         <div className="perk-data">
           <header>
@@ -71,9 +88,10 @@ const Perk = ({ onClick, perk, selected }) => {
     >
       <div
         className={`perk-diagram${selected ? " selected" : ""}`}
-        onClick={selectPerk}
+        onClick={handleClick}
         onMouseOut={() => setOpen(false)}
         onMouseOver={() => setOpen(true)}
+        onDoubleClick={handleDoubleClick}
       >
         {perk ? (
           <>
