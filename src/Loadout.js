@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./Loadout.scss";
-import { Input, Modal } from "antd";
-
+import domtoimage from "dom-to-image";
+import { Input, Modal, message, Button, Tooltip } from "antd";
+import { SaveOutlined, PictureOutlined, UndoOutlined } from "@ant-design/icons";
 import Perk from "./Perk";
+import "./Loadout.scss";
 
 function replaceSpecialChars(str) {
   if (Boolean(str)) {
@@ -19,7 +20,7 @@ function replaceSpecialChars(str) {
   }
 }
 
-function Loadout({ allPerks, title }) {
+function Loadout({ allPerks, title, selected, player }) {
   const [chooser, setChooser] = useState({ open: false, index: null });
   const [survivor, setSurvivor] = useState([null, null, null, null]);
 
@@ -28,6 +29,14 @@ function Loadout({ allPerks, title }) {
   useEffect(() => {
     setSurvivor([null, null, null, null]);
   }, [allPerks]);
+
+  useEffect(() => {
+    if (selected) {
+      console.log(selected);
+      setSurvivor(selected.map((i) => allPerks[i]));
+    }
+    // eslint-disable-next-line
+  }, [selected]);
 
   const handleFilter = (text) => {
     if (Boolean(text) === false) {
@@ -80,6 +89,43 @@ function Loadout({ allPerks, title }) {
     setChooser({ open: false, index: null });
   };
 
+  const handleSave = (e) => {
+    console.log(survivor);
+    if (!survivor.some((el) => Boolean(el) === false)) {
+      const perks = survivor.map((p) => allPerks.indexOf(p));
+      const savedObj = { player: player, perks: perks };
+      const path = btoa(JSON.stringify(savedObj));
+      window.location.hash = path;
+      navigator.clipboard.writeText(window.location.href);
+      message.success("URL copied to clipboard!");
+    } else {
+      window.history.pushState(
+        "",
+        document.title,
+        window.location.pathname + window.location.search + ""
+      );
+    }
+  };
+
+  const handlePrint = () => {
+    const node = document.querySelector("section");
+    domtoimage.toPng(node).then(function (dataUrl) {
+      var link = document.createElement("a");
+      link.download = `${player ? "survivor" : "killer"}-loadout.png`;
+      link.href = dataUrl;
+      link.click();
+    });
+  };
+
+  const handleReset = () => {
+    setSurvivor([null, null, null, null]);
+    window.history.pushState(
+      "",
+      document.title,
+      window.location.pathname + window.location.search + ""
+    );
+  };
+
   return (
     <div className="loadout">
       <Modal
@@ -112,7 +158,38 @@ function Loadout({ allPerks, title }) {
           ))}
         </div>
       </Modal>
-      <h3>{title}</h3>
+      <h3>
+        {title}
+        <div>
+          <Tooltip title="Save url">
+            <Button
+              shape="circle"
+              type="link"
+              onClick={handleSave}
+              disabled={survivor.some((el) => Boolean(el) === false)}
+              icon={<SaveOutlined />}
+            />
+          </Tooltip>
+
+          <Tooltip title="Download image">
+            <Button
+              shape="circle"
+              type="link"
+              onClick={handlePrint}
+              disabled={survivor.some((el) => Boolean(el) === false)}
+              icon={<PictureOutlined />}
+            />
+          </Tooltip>
+          <Tooltip title="Reset perks">
+            <Button
+              shape="circle"
+              type="link"
+              onClick={handleReset}
+              icon={<UndoOutlined />}
+            />
+          </Tooltip>
+        </div>
+      </h3>
       <section>
         {survivor.map((perk, index) => (
           <Perk onClick={() => handleClick(index)} perk={perk} />

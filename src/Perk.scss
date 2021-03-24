@@ -3,27 +3,34 @@
   width: 80px;
   height: 80px;
   border: 5px solid black;
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
   cursor: pointer;
   transition: all 0.1s;
   user-select: none;
   box-shadow: rgba($color: #000000, $alpha: 0.3) 0px 0px 15px 5px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
 
   img {
     width: 120px;
-    transform: rotate(45deg);
+    height: 120px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
     user-select: none;
   }
 
   &:hover {
-    transform: scale(0.85) rotate(-45deg);
+    // transform: scale(0.85) rotate(-45deg);
   }
 
   &:active {
-    transform: scale(0.95) rotate(-45deg);
+    // transform: scale(0.95) rotate(-45deg);
   }
   &.selected {
     border-color: white;

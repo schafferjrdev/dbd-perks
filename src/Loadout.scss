@@ -4,9 +4,18 @@
     color: white;
     text-transform: uppercase;
     background-color: black;
-    padding: 2px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
+
+.bged {
+  background: url("./img/campfire.png");
+  background-size: cover;
+}
+
 section {
   display: flex;
   align-items: center;
@@ -43,4 +52,13 @@ section {
 }
 .ant-modal-close-x {
   color: #fff;
+}
+
+.ant-btn-link {
+  color: #eee;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+  }
 }
