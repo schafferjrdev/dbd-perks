@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from "react";
+import { Input, Modal, Menu, message } from "antd";
+import { Perk, Editable, IconButton } from "../components";
 import domtoimage from "dom-to-image";
-import { Input, Modal, message, Button, Tooltip } from "antd";
+
 import {
   PictureOutlined,
   UndoOutlined,
   ShareAltOutlined,
+  SaveOutlined,
+  DeleteOutlined,
+  EllipsisOutlined,
 } from "@ant-design/icons";
-import Perk from "./Perk";
+
 import "./Loadout.scss";
 
 function replaceSpecialChars(str) {
@@ -24,11 +29,23 @@ function replaceSpecialChars(str) {
   }
 }
 
-function Loadout({ allPerks, title, selected, player }) {
+function Loadout({
+  allPerks,
+  selected,
+  setSelected,
+  player,
+  setPlayer,
+  buildName,
+  setBuildName,
+  saved,
+  setSaved,
+}) {
   const [chooser, setChooser] = useState({ open: false, index: null });
   const [survivor, setSurvivor] = useState([null, null, null, null]);
 
   const [allSurvivorPerks, setAllSurvivorPerks] = useState(allPerks);
+
+  const [editable, setEditable] = useState(false);
 
   useEffect(() => {
     setSurvivor([null, null, null, null]);
@@ -36,7 +53,6 @@ function Loadout({ allPerks, title, selected, player }) {
 
   useEffect(() => {
     if (selected) {
-      console.log(selected);
       setSurvivor(selected.map((i) => allPerks[i]));
     }
     // eslint-disable-next-line
@@ -102,12 +118,16 @@ function Loadout({ allPerks, title, selected, player }) {
     document.body.removeChild(elem);
   }
 
-  const handleSave = (e) => {
+  const encodePerks = () => {
+    const perks = survivor.map((p) => allPerks.indexOf(p));
+    const savedObj = { player: player, perks: perks, buildName: buildName };
+    return btoa(JSON.stringify(savedObj));
+  };
+
+  const handleShare = () => {
     console.log(survivor);
     if (!survivor.some((el) => Boolean(el) === false)) {
-      const perks = survivor.map((p) => allPerks.indexOf(p));
-      const savedObj = { player: player, perks: perks };
-      const path = btoa(JSON.stringify(savedObj));
+      const path = encodePerks();
       window.location.hash = path;
       copyToClipboard(window.location.href);
       message.success("URL copied to clipboard!");
@@ -139,6 +159,46 @@ function Loadout({ allPerks, title, selected, player }) {
     );
   };
 
+  const handleSave = () => {
+    if (!saved.includes(encodePerks())) {
+      localStorage.setItem("builds", [...saved, encodePerks()]);
+      setSaved([...saved, encodePerks()]);
+    }
+  };
+
+  const handleRemoveSaved = (item) => {
+    const auxSaved = [...saved];
+
+    auxSaved.splice(auxSaved.indexOf(item), 1);
+    localStorage.setItem("builds", auxSaved);
+
+    setSaved(auxSaved);
+  };
+
+  const handleLoad = (item) => {
+    const obj = JSON.parse(atob(item));
+    window.location.hash = item;
+
+    setPlayer(obj.player);
+    setSelected(obj.perks);
+    setBuildName(obj.buildName);
+  };
+
+  const getName = (code) => {
+    return JSON.parse(atob(code)).buildName;
+  };
+
+  const menu = (
+    <Menu className="saved-menu">
+      {saved.map((item, i) => (
+        <Menu.Item key={`${i}_${item}`}>
+          <span onClick={() => handleLoad(item)}>{getName(item)}</span>
+          <DeleteOutlined onClick={() => handleRemoveSaved(item)} />
+        </Menu.Item>
+      ))}
+    </Menu>
+  );
+
   return (
     <div className="loadout">
       <Modal
@@ -149,6 +209,7 @@ function Loadout({ allPerks, title, selected, player }) {
               placeholder="Search for perks (name, character, function...)"
               onChange={(e) => handleFilter(e.target.value)}
               allowClear
+              autoFocus
             />
           </div>
         }
@@ -172,35 +233,46 @@ function Loadout({ allPerks, title, selected, player }) {
         </div>
       </Modal>
       <h3>
-        {title}
+        <Editable
+          setEditable={setEditable}
+          editable={editable}
+          buildName={buildName}
+          setBuildName={setBuildName}
+        />
         <div>
-          <Tooltip title="Share url">
-            <Button
-              shape="circle"
-              type="link"
-              onClick={handleSave}
-              disabled={survivor.some((el) => Boolean(el) === false)}
-              icon={<ShareAltOutlined />}
-            />
-          </Tooltip>
+          <IconButton
+            onClick={handleShare}
+            disabled={survivor.some((el) => Boolean(el) === false)}
+            icon={<ShareAltOutlined />}
+            title="Share url"
+          />
 
-          <Tooltip title="Download image">
-            <Button
-              shape="circle"
-              type="link"
-              onClick={handlePrint}
-              disabled={survivor.some((el) => Boolean(el) === false)}
-              icon={<PictureOutlined />}
-            />
-          </Tooltip>
-          <Tooltip title="Reset perks">
-            <Button
-              shape="circle"
-              type="link"
-              onClick={handleReset}
-              icon={<UndoOutlined />}
-            />
-          </Tooltip>
+          <IconButton
+            title="Download image"
+            onClick={handlePrint}
+            disabled={survivor.some((el) => Boolean(el) === false)}
+            icon={<PictureOutlined />}
+          />
+
+          <IconButton
+            title="Save build"
+            icon={<SaveOutlined />}
+            onClick={handleSave}
+            disabled={survivor.some((el) => Boolean(el) === false)}
+          />
+
+          <IconButton
+            title="Reset perks"
+            onClick={handleReset}
+            icon={<UndoOutlined />}
+          />
+
+          <IconButton
+            title="Saved builds"
+            icon={<EllipsisOutlined />}
+            overlay={menu}
+            disabled={!Boolean(saved.length)}
+          />
         </div>
       </h3>
       <section>

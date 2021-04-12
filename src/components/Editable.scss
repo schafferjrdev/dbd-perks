@@ -1,0 +1,14 @@
+.editable-span {
+  border: 1px solid transparent;
+  padding: 2px;
+  transition: all 0.3s ease;
+  &:hover {
+    border: 1px solid white;
+  }
+}
+
+.editable-input {
+  background-color: #000;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+}

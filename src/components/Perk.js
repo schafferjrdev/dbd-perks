@@ -3,7 +3,7 @@ import { isMobile } from "react-device-detect";
 import { Popover } from "react-tiny-popover";
 
 import "./Perk.scss";
-import blank from "./img/blank.png";
+import blank from "../img/blank.png";
 
 function nameIntoFile(name) {
   return `${name
