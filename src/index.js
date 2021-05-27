@@ -69,6 +69,25 @@ function App() {
         saved={saved}
         setSaved={setSaved}
       />
+      <footer>
+        <span>
+          Game content and materials are trademarks and copyrights of{" "}
+          <a href="https://www.bhvr.com" target="_blank" rel="noreferrer">
+            Behaviour
+          </a>
+          . All rights reserved.
+        </span>
+        <span>
+          This is just a fanmade by{" "}
+          <a
+            href="https://github.com/schafferjrdev"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Schaffer
+          </a>
+        </span>
+      </footer>
     </div>
   );
 }
