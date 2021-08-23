@@ -33,6 +33,8 @@ function formatDesctription(desc) {
         /(auras?)\s|\s(auras?)([.,])/gim,
         '<b class="orange"> $1 $2</b>$3'
       )
+      .replaceAll(/locker?/gim, "<b class='orange'>$&</b>")
+      .replaceAll(/generators?/gim, "<b class='orange'>$&</b>")
       .replaceAll(/dying\sstate/gim, '<b class="red">$&</b>')
       .replaceAll(/bloodpoints?/gim, "<b class='red'>$&</b>")
       .replaceAll(/exhausted?/gim, "<b >$&</b>")

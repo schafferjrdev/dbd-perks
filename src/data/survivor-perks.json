@@ -78,7 +78,7 @@
     },
     {
         "character": "Bill Overbeck",
-        "desc": "You are fuelled with an unexpected energy when saving an Ally from a Hook within the Killer's Terror Radius. After unhooking a Survivor within the Killer's Terror Radius, for 15 seconds,any damage taken that would put the unhooked Survivor into the Dying State will instead apply the Deep Wound Status Effect. The Survivor has 10/15/20 seconds to mend themselves. If the unhooked Survivor takes any damage while affected by Deep Wound or if its timer ends, the unhooked Survivor is immediately put into the Dying State.",
+        "desc": "You are fuelled with an unexpected energy when saving an Ally from a Hook within the Killer's Terror Radius. For 8/10/12 seconds after unhooking a Survivor, the unhooked Survivor is protected by the Endurance Status Effect, any damage taken that would put the unhooked Survivor into the Dying State will instead apply the Deep Wound Status Effect. The Survivor has 20 seconds to mend themselves. If the unhooked Survivor takes any damage while affected by Deep Wound or if its timer ends, the unhooked Survivor is immediately put into the Dying State.",
         "name": "Borrowed Time",
         "rarity": "Very Rare",
         "type": "Healing",
@@ -276,7 +276,7 @@
     },
     {
         "character": "Yui Kimura",
-        "desc": "You've had your share of scrapes and bruises, but luck's always on your side. Lucky Break activates any time you are injured. While Lucky Break is active, you won't leave trails of blood for a total of 120/150/180 seconds. Lucky Break becomes permanently deactivated for the remainder of the Trial once the total duration has elapsed.",
+        "desc": "You've had your share of scrapes and bruises, but luck's always on your side. Lucky Break activates any time you are injured. While Lucky Break is active, you won't leave trails of blood for a total of 35/40/45 seconds. Lucky Break becomes permanently deactivated for the remainder of the Trial once the total duration has elapsed.",
         "name": "Lucky Break",
         "rarity": "Very Rare",
         "type": "Stealth"
@@ -304,7 +304,7 @@
     },
     {
         "character": "Laurie Strode",
-        "desc": "A supernatural bond links you to the Killer. If you are looking in the Killer's direction, your link will reveal your Auras to each other. This effect applies only if you are outside of the Killer's Terror Radius. As the Killer's Obsession, this effect applies to a maximum range of 56/64/72 metres. Otherwise, it applies to a maximum range of 44/56/64 metres. Increases your chances of being the Obsession.",
+        "desc": "A supernatural bond links you to the Killer. Whenever the Killer reads your Aura, Object of Obsession activates. The Killer's Aura is revealed to you for the same duration as they read your Aura. Your Action speeds in Repairing, Healing, and Cleansing are increased by 2/4/6 %. If you are the Obsession, your Aura is revealed to the Killer for 3 seconds every 30 seconds. Increases the odds of being the Obsession.",
         "name": "Object of Obsession",
         "rarity": "Very Rare",
         "type": "Aura",
@@ -312,7 +312,7 @@
     },
     {
         "character": "Ace Visconti",
-        "desc": "Strengthens the potential of you and your team's Aura-reading abilities. Increases Aura-reading ranges by 4/6/8 metres.",
+        "desc": "Strengthens the potential of you and your team's Aura-reading abilities. Increases Aura-reading ranges by 8/12/16 metres.",
         "name": "Open-Handed",
         "rarity": "Very Rare",
         "type": "Aura"
@@ -584,5 +584,53 @@
         "name": "Self-Preservation",
         "rarity": "Very Rare",
         "type": "Stealth"
+    },
+    {
+        "character": "Leon Scott Kennedy",
+        "desc": "Pain hurts you as much as anyone, but you would prefer others do not know that. When healing, you make no noise, including Grunts of Pain. Failed Healing Skill Checks do not trigger a Loud Noise notification and only apply a Regression penalty of 3/2/1 %.",
+        "name": "Bite the Bullet",
+        "rarity": "Very Rare",
+        "type": "Stealth",
+        "realName": "btb; resident evil"
+    },
+    {
+        "character": "Leon Scott Kennedy",
+        "desc": "You have adapted to a world in chaos and making what you can from the debris. After repairing Generators for a total of 70/60/50 %, Flashbang activates. Enter a Locker while empty-handed and press the Ability button to craft a Flash Grenade. The Flash Grenade is left behind when escaping the Trial.",
+        "name": "Flashbang",
+        "rarity": "Very Rare",
+        "type": "Evasion",
+        "realName": "fb; resident evil"
+    },
+    {
+        "character": "Leon Scott Kennedy",
+        "desc": "You keep a careful eye on objectives when they are slipping away. While repairing Generators, complete 5/4/3 Good or Great Skill Checks to activate Rookie Spirit for the remainder of the Trial. Once active, the Auras of any regressing Generators are revealed to you.",
+        "name": "Rookie Spirit",
+        "rarity": "Very Rare",
+        "type": "Aura",
+        "realName": "rs; resident evil"
+    },
+    {
+        "character": "Jill Valentine",
+        "desc": "You know how to withstand an enemy stronger than you, and it starts with hunting down and knocking out their support. You cleanse Totems 20 % faster. Gain another, stack-able 20 % Cleansing Speed bonus per cleansed Totem. After cleansing a Totem, the Aura of the Totem farthest from you is revealed to you for 2/3/4 seconds.",
+        "name": "Counterforce",
+        "rarity": "Very Rare",
+        "type": "Objective",
+        "realName": "resident evil"
+    },
+    {
+        "character": "Jill Valentine",
+        "desc": "You have come back from near impossible odds... and you will do it again. After being unhooked or unhooking yourself, instantly gain 40/45/50 % to your Healing progress.",
+        "name": "Resurgence",
+        "rarity": "Very Rare",
+        "type": "Healing",
+        "realName": "resident evil"
+    },
+    {
+        "character": "Jill Valentine",
+        "desc": "When direct combat is not an option, you still find ways to strike back. After repairing Generators for a total of 66 %, Blast Mine activates. After repairing a Generator for at least 3 seconds, press the Ability button to install a Trap, which stays active for 35/40/45 seconds. The Aura of Trapped Generators are revealed in yellow to all Survivors. A Generator can only be affected by one instance of Blast Mine at a time. When the Killer damages a Trapped Generator, the Trap explodes, stunning them and blinding anyone nearby. Blast Mine deactivates after triggering successfully.",
+        "name": "Blast Mine",
+        "rarity": "Very Rare",
+        "type": "Evasion",
+        "realName": "resident evil"
     }
 ]

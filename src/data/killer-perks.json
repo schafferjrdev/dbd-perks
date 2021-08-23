@@ -464,7 +464,7 @@
     },
     {
         "character": "Oni",
-        "desc": "Unlocks potential in one's Aura-reading ability. You are mentally alert and aware of key points on the battlefield. The Auras of all Pallets and Windows are revealed to you within a range of 24 metres.When a Survivor is damaged, Zanshin Tactics becomes inactive for 40/35/30 seconds.",
+        "desc": "Unlocks potential in one's Aura-reading ability. You are mentally alert and aware of key points on the battlefield. The Auras of all Pallets and Windows are revealed to you within a range of 24/28/32 metres.",
         "name": "Zanshin Tactics",
         "rarity": "Rare",
         "type": "Aura"
@@ -521,7 +521,7 @@
     },
     {
         "character": "Trickster",
-        "desc": "A Hex that ensures those lesser than you are properly herded. The Entity blocks a Window for 10/12/14 seconds after a Survivors performs a rushed vault through it. The Hex effects persist as long as the related Hex Totem is standing.",
+        "desc": "A Hex that ensures those lesser than you are properly herded. The Entity blocks a Window for 14/17/20 seconds after a Survivors performs a rushed vault through it. The Hex effects persist as long as the related Hex Totem is standing.",
         "name": "Hex: Crowd Control",
         "rarity": "Very Rare",
         "type": "Chase",
@@ -529,10 +529,34 @@
     },
     {
         "character": "Trickster",
-        "desc": "You're not going to let just anyone into the VIP room. For each of the Survivors you manage to hook, No Way Out gains a Token. When the last Generator is repaired, The Entity blocks both Exit Gate Switches for 10 seconds and an additional 4/6/8 seconds per Token in your possession, up to a combined maximum of 26/34/42 seconds.",
+        "desc": "You are not going to let just anyone into the VIP room. For each Survivor you hook for the first time, No Way Out gains 1 Token. Once the Exit Gates have been powered, No Way Out activates: When a Survivor interacts with an Exit Gate Switch, you receive a Loud Noise notification and The Entity blocks both Exit Gate Switches for 12 seconds and an additional 6/9/12 seconds per Token in your possession, up to a combined maximum of 36/48/60 seconds.",
         "name": "No Way Out",
         "rarity": "Very Rare",
         "type": "Penalty",
         "realName": "Ji-Woon Hak"
+    },
+    {
+        "character": "Nemesis",
+        "desc": "You have been designed to track down and eliminate targets. At the start of the Trial, the Auras of all Survivors are revealed to you for 7/8/9 seconds.",
+        "name": "Lethal Pursuer",
+        "rarity": "Very Rare",
+        "type": "Aura",
+        "realName": "Resident Evil"
+    },
+    {
+        "character": "Nemesis",
+        "desc": "You know how to brutalise one member of a team to cause a panic. Whenever you put a healthy Survivor into the Injured State, all injured Survivors suffer from the Oblivious Status Effect for 20/25/30 seconds. Hysteria has a cool-down of 30 seconds.",
+        "name": "Hysteria",
+        "rarity": "Very Rare",
+        "type": "Hunt",
+        "realName": "Resident Evil"
+    },
+    {
+        "character": "Nemesis",
+        "desc": "The NE-α parasite provides you with the intelligence and awareness needed to set a trap. After kicking a Generator, its Aura is highlighted in yellow. When you put a Survivor into the Dying State, every affected Generator explodes and starts regressing, removing the highlighted Aura. Applies an immediate 6 % Progression penalty. Any Survivor repairing a Generator when it explodes will scream and suffer from the Incapacitated Status Effect for 12/14/16 seconds.",
+        "name": "Eruption",
+        "rarity": "Very Rare",
+        "type": "Penalty",
+        "realName": "Resident Evil"
     }
 ]

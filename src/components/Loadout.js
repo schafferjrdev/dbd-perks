@@ -126,7 +126,7 @@ function Loadout({
 
   const handleShare = () => {
     console.log(survivor);
-    if (!survivor.some((el) => Boolean(el) === false)) {
+    if (survivor.some((el) => Boolean(el) === true)) {
       const path = encodePerks();
       window.location.hash = path;
       copyToClipboard(window.location.href);
@@ -204,7 +204,7 @@ function Loadout({
       <Modal
         title={
           <div>
-            <p>Select a perk</p>
+            <p>Select a perk ({player ? "Survivor" : "Killer"})</p>
             <Input
               placeholder="Search for perks (name, character, function...)"
               onChange={(e) => handleFilter(e.target.value)}
@@ -242,7 +242,7 @@ function Loadout({
         <div>
           <IconButton
             onClick={handleShare}
-            disabled={survivor.some((el) => Boolean(el) === false)}
+            disabled={!survivor.some((el) => Boolean(el) === true)}
             icon={<ShareAltOutlined />}
             title="Share url"
           />
@@ -250,7 +250,7 @@ function Loadout({
           <IconButton
             title="Download image"
             onClick={handlePrint}
-            disabled={survivor.some((el) => Boolean(el) === false)}
+            disabled={!survivor.some((el) => Boolean(el) === true)}
             icon={<PictureOutlined />}
           />
 
@@ -258,7 +258,7 @@ function Loadout({
             title="Save build"
             icon={<SaveOutlined />}
             onClick={handleSave}
-            disabled={survivor.some((el) => Boolean(el) === false)}
+            disabled={!survivor.some((el) => Boolean(el) === true)}
           />
 
           <IconButton
