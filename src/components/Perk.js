@@ -8,20 +8,32 @@ import blank from "../img/blank.png";
 function nameIntoFile(name) {
   return `${name
     ?.toLowerCase()
-    .replaceAll(" ", "-")
+    .replaceAll(" ", "")
     .replaceAll("'", "")
+    .replaceAll("-", "")
     .replaceAll(":", "")
     .replaceAll("!", "")}.png`;
 }
+
+function perkImages(perk) {
+  /**
+   * When need to update images, download them from discord and run:
+   * dir | Rename-Item -NewName { $_.Name.ToLowerInvariant() }
+   */
+  return `${process.env.PUBLIC_URL}/assets/perks/iconperks_${nameIntoFile(
+    perk?.PerkName
+  )}`;
+}
+
+const addImageFallback = (event, perk) => {
+  event.currentTarget.src = perk?.Image;
+};
 
 function formatDesctription(desc) {
   if (desc) {
     const phrase = desc
       .replaceAll(/[.]\s/gim, ".<br/>")
-      .replaceAll(
-        /(\s|[-+])\d+\s[%]|\s\d+\s\w{2,7}\b|\s\d+[%]/gim,
-        '<b class="yellow big">$&</b>'
-      )
+      .replaceAll(/[-+]?\s?\d+\s%/gim, '<b class="yellow big">$&</b>')
       .replaceAll(
         /(\d\.\d|\d+)[/](\d\.\d|\d+)[/](\d\.\d|\d+)(\s\w{1,9}\b|\w{1,9}\b|\s[%°]|[%°])/gim,
         "<b class='yellow'>$1</b>/<b class='green'>$2</b>/<b class='purple'>$3</b> <b>$4</b>"
@@ -77,13 +89,15 @@ const Perk = ({ onClick, perk, selected }) => {
           : ["right", "left", "bottom", "top"]
       }
       content={
-        <div className="perk-data">
+        <div className='perk-data'>
           <header>
-            <span className="perk-title">{perk?.name}</span>
-            <span>{`${perk?.rarity} ${perk?.character} Perk`}</span>
+            <span className='perk-title'>{perk?.PerkName}</span>
+            <span>{`${perk?.Survivor || perk?.Killer}'s Perk`}</span>
           </header>
           <div
-            dangerouslySetInnerHTML={{ __html: formatDesctription(perk?.desc) }}
+            dangerouslySetInnerHTML={{
+              __html: formatDesctription(perk?.Description),
+            }}
           />
         </div>
       }
@@ -99,18 +113,17 @@ const Perk = ({ onClick, perk, selected }) => {
           <>
             <div className={`perk${selected ? " selected" : ""}`}>
               <img
-                src={`${process.env.PUBLIC_URL}/assets/images/${nameIntoFile(
-                  perk?.name
-                )}`}
-                alt={nameIntoFile(perk?.name)}
+                src={perkImages(perk)}
+                alt={nameIntoFile(perk?.PerkName)}
+                onError={(event) => addImageFallback(event, perk)}
               />
             </div>
-            <span className="perk-name">{perk.name}</span>
+            <span className='perk-name'>{perk.PerkName}</span>
           </>
         ) : (
           <>
-            <img className="blank-perk" src={blank} alt="blank perk" />
-            <span className="perk-name" style={{ opacity: 0 }}>
+            <img className='blank-perk' src={blank} alt='blank perk' />
+            <span className='perk-name' style={{ opacity: 0 }}>
               Choose a perk
             </span>
           </>

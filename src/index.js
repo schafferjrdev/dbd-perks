@@ -1,12 +1,21 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
-import "antd/dist/antd.css";
+import "antd/dist/antd.min.css";
 import { Loadout } from "./components";
-import survivorPerks from "./data/survivor-perks.json";
-import killerPerks from "./data/killer-perks.json";
+import survivorPerks from "./data/survivor.json";
+import killerPerks from "./data/killer.json";
 import killer from "./img/killer.png";
 import survivor from "./img/survivor.png";
+
+/*
+*
+Download new perks every patch
+https://dennisreep.nl/dbd/api/#/default/get_dbd_api_v3_getKillerPerkData
+
+Trocar todas as imagens por:
+https://images.weserv.nl/?url=
+*/
 
 function App() {
   const [player, setPlayer] = useState(true);
@@ -15,14 +24,27 @@ function App() {
   const [saved, setSaved] = useState([]);
 
   function compare(a, b) {
-    if (a.name < b.name) {
+    if (a.PerkName < b.PerkName) {
       return -1;
     }
-    if (a.name > b.name) {
+    if (a.PerkName > b.PerkName) {
       return 1;
     }
     return 0;
   }
+
+  //TODO: Criar um fetch para buscar os dados no futuro
+  useEffect(() => {
+    async function FetchPerks() {
+      const response = await fetch(
+        "https://dennisreep.nl/dbd/api/v3/getSurvivorPerkData"
+      );
+
+      const perks = await response.json();
+      console.log("perks", perks);
+    }
+    FetchPerks();
+  }, []);
 
   useEffect(() => {
     const path = window.location?.hash;
@@ -46,13 +68,13 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
+    <div className='app'>
       <div>
         <img
           src={player ? survivor : killer}
-          alt="player icon"
+          alt='player icon'
           onClick={() => setPlayer(!player)}
-          className="player-select"
+          className='player-select'
         />
       </div>
       <Loadout
@@ -72,7 +94,7 @@ function App() {
       <footer>
         <span>
           Game content and materials are trademarks and copyrights of{" "}
-          <a href="https://www.bhvr.com" target="_blank" rel="noreferrer">
+          <a href='https://www.bhvr.com' target='_blank' rel='noreferrer'>
             Behaviour
           </a>
           . All rights reserved.
@@ -80,9 +102,9 @@ function App() {
         <span>
           This is just a fanmade by{" "}
           <a
-            href="https://github.com/schafferjrdev"
-            target="_blank"
-            rel="noreferrer"
+            href='https://github.com/schafferjrdev'
+            target='_blank'
+            rel='noreferrer'
           >
             Schaffer
           </a>

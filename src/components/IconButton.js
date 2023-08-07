@@ -5,14 +5,14 @@ const IconButton = ({ onClick, icon, title, disabled, overlay }) => {
   return overlay ? (
     <Tooltip title={title}>
       <Dropdown overlay={overlay} disabled={disabled}>
-        <Button shape="circle" type="link" icon={icon} />
+        <Button shape='circle' type='link' icon={icon} />
       </Dropdown>
     </Tooltip>
   ) : (
     <Tooltip title={title}>
       <Button
-        shape="circle"
-        type="link"
+        shape='circle'
+        type='link'
         icon={icon}
         onClick={onClick}
         disabled={disabled}

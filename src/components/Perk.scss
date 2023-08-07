@@ -18,10 +18,11 @@
   -webkit-justify-content: center;
 
   img {
-    width: 160%;
+    width: 190%;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     user-select: none;
+    height: 150%;
   }
 
   &:hover {

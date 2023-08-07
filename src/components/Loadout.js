@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Input, Modal, Menu, message } from "antd";
 import { Perk, Editable, IconButton } from "../components";
-import domtoimage from "dom-to-image";
+import domtoimage from "dom-to-image-more";
 
 import {
   PictureOutlined,
@@ -66,12 +66,13 @@ function Loadout({
       const filter = new RegExp(sanitizedText, "gmiu");
       const array = allPerks.filter((perk) => {
         return (
-          replaceSpecialChars(perk.name).match(filter) ||
-          replaceSpecialChars(perk.character).match(filter) ||
-          replaceSpecialChars(perk.desc).match(filter) ||
-          replaceSpecialChars(perk.type).match(filter) ||
-          replaceSpecialChars(perk.rarity).match(filter) ||
-          replaceSpecialChars(perk.realName).match(filter)
+          replaceSpecialChars(perk.PerkName).match(filter) ||
+          replaceSpecialChars(perk.Killer).match(filter) ||
+          replaceSpecialChars(perk.Survivor).match(filter) ||
+          replaceSpecialChars(perk.Description).match(filter)
+          // replaceSpecialChars(perk.type).match(filter) ||
+          // replaceSpecialChars(perk.rarity).match(filter) ||
+          // replaceSpecialChars(perk.realName).match(filter)
         );
       });
 
@@ -142,12 +143,17 @@ function Loadout({
 
   const handlePrint = () => {
     const node = document.querySelector("section");
-    domtoimage.toPng(node, { bgcolor: "#000" }).then(function (dataUrl) {
-      var link = document.createElement("a");
-      link.download = `${player ? "survivor" : "killer"}-loadout.png`;
-      link.href = dataUrl;
-      link.click();
-    });
+    domtoimage
+      .toPng(node, { bgcolor: "#000" })
+      .then(function (dataUrl) {
+        var link = document.createElement("a");
+        link.download = `${player ? "survivor" : "killer"}-loadout.png`;
+        link.href = dataUrl;
+        link.click();
+      })
+      .catch(function (error) {
+        console.error("oops, something went wrong!", error);
+      });
   };
 
   const handleReset = () => {
@@ -189,7 +195,7 @@ function Loadout({
   };
 
   const menu = (
-    <Menu className="saved-menu">
+    <Menu className='saved-menu'>
       {saved.map((item, i) => (
         <Menu.Item key={`${i}_${item}`}>
           <span onClick={() => handleLoad(item)}>{getName(item)}</span>
@@ -200,13 +206,13 @@ function Loadout({
   );
 
   return (
-    <div className="loadout">
+    <div className='loadout'>
       <Modal
         title={
           <div>
             <p>Select a perk ({player ? "Survivor" : "Killer"})</p>
             <Input
-              placeholder="Search for perks (name, character, function...)"
+              placeholder='Search for perks (name, character, function...)'
               onChange={(e) => handleFilter(e.target.value)}
               allowClear
               autoFocus
@@ -214,20 +220,21 @@ function Loadout({
           </div>
         }
         onCancel={handleClose}
-        visible={chooser.open}
+        open={chooser.open}
         footer={false}
         centered
         width={1000}
         zIndex={10}
         destroyOnClose
       >
-        <div className="choose-perk">
+        <div className='choose-perk'>
           <Perk onClick={() => handleChoose(null)} />
-          {allSurvivorPerks.map((perk) => (
+          {allSurvivorPerks.map((perk, i) => (
             <Perk
               onClick={() => handleChoose(perk)}
               perk={perk}
               selected={survivor.includes(perk)}
+              key={`perk_${i}`}
             />
           ))}
         </div>
@@ -244,31 +251,31 @@ function Loadout({
             onClick={handleShare}
             disabled={!survivor.some((el) => Boolean(el) === true)}
             icon={<ShareAltOutlined />}
-            title="Share url"
+            title='Share url'
           />
 
           <IconButton
-            title="Download image"
+            title='Download image'
             onClick={handlePrint}
             disabled={!survivor.some((el) => Boolean(el) === true)}
             icon={<PictureOutlined />}
           />
 
           <IconButton
-            title="Save build"
+            title='Save build'
             icon={<SaveOutlined />}
             onClick={handleSave}
             disabled={!survivor.some((el) => Boolean(el) === true)}
           />
 
           <IconButton
-            title="Reset perks"
+            title='Reset perks'
             onClick={handleReset}
             icon={<UndoOutlined />}
           />
 
           <IconButton
-            title="Saved builds"
+            title='Saved builds'
             icon={<EllipsisOutlined />}
             overlay={menu}
             disabled={!Boolean(saved.length)}
@@ -277,7 +284,11 @@ function Loadout({
       </h3>
       <section>
         {survivor.map((perk, index) => (
-          <Perk onClick={() => handleClick(index)} perk={perk} />
+          <Perk
+            onClick={() => handleClick(index)}
+            perk={perk}
+            key={`survivor_perk_${index}`}
+          />
         ))}
       </section>
     </div>
