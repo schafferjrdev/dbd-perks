@@ -1,0 +1,116 @@
+.loadout {
+  width: 65vw;
+  h3 {
+    color: white;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.saved-menu {
+  background-color: #222;
+  color: white;
+  li {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+
+    span {
+      margin: 0 8px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &:hover {
+      background-color: #222;
+    }
+  }
+}
+
+.bged {
+  background: url("../img/campfire.png");
+  background-size: cover;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.choose-perk {
+  background: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  input {
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+.ant-modal-content {
+  background-color: black;
+  color: white;
+  .ant-modal-body {
+    height: 75vh;
+    overflow-y: scroll;
+  }
+  .ant-modal-header {
+    background-color: black;
+    .ant-modal-title {
+      color: white;
+    }
+  }
+}
+.ant-modal-close-x {
+  color: #fff;
+}
+
+.ant-btn-link {
+  color: #eee;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.ant-btn-link[disabled] {
+  color: #333;
+}
+
+.ant-dropdown-trigger {
+  &:disabled {
+    &:hover {
+      color: #333;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 75px;
+  }
+  .loadout {
+    width: 95vw;
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .choose-perk {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
